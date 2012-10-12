@@ -1,6 +1,6 @@
 # AFQiitaClient
 
-** [Qiita API](http://qiita.com/docs) を Cocoa で操るクライアントです **
+**[Qiita API](http://qiita.com/docs) を Cocoa で操るクライアント**
 
 [Qiita](http://qiita.com) は、プログラミングに関する Tips、ノウハウ、メモを簡単に記録 & 公開できるプログラマのための技術情報共有サービスです。
 
