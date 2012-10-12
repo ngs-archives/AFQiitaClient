@@ -4,6 +4,8 @@
 
 [Qiita](http://qiita.com) は、プログラミングに関する Tips、ノウハウ、メモを簡単に記録 & 公開できるプログラマのための技術情報共有サービスです。
 
+`AFQiitaClient` は `AFHTTPClient` サブクラスで、[AFNetworking](https://github.com/afnetworking/afnetworking) のソースコードと共に、プロジェクトに追加して使用します。
+
 ## 使い方
 
 ### 初期化
