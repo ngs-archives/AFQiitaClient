@@ -81,11 +81,9 @@ AFQiitaClient *client = [[AFQiitaClient alloc] init];
 ```objective-c
 [client itemsWithUsername:@"yaotti@github"
                   success:^(AFQiitaResponse *response) {
-                    NSArray *items = [response results];
-                    [items enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-                      AFQiitaItem *item = obj;
-                      NSLog(@"Post %d: %@", idx, item.title);
-                    }];
+                    AFQiitaItem *item = nil;
+                    while(item = response.next)
+                      NSLog(@"Post: %@", item.title);
                   }
                   failure:^(NSError *error) {
                     NSLog(@"Error: %@", error);
@@ -96,11 +94,9 @@ AFQiitaClient *client = [[AFQiitaClient alloc] init];
 ```objective-c
 [client stockedItemsWithUsername:@"yaotti@github"
                          success:^(AFQiitaResponse *response) {
-                           NSArray *items = [response results];
-                           [items enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-                             AFQiitaItem *item = obj;
-                             NSLog(@"Post %d: %@", idx, item.title);
-                           }];
+                           AFQiitaItem *item = nil;
+                           while(item = response.next)
+                             NSLog(@"Post: %@", item.title);
                          }
                          failure:^(NSError *error) {
                            NSLog(@"Error: %@", error);
@@ -111,11 +107,9 @@ AFQiitaClient *client = [[AFQiitaClient alloc] init];
 ```objective-c
 [client itemsWithTag:@"Rails"
              success:^(AFQiitaResponse *response) {
-               NSArray *items = [response results];
-               [items enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-                 AFQiitaItem *item = obj;
-                 NSLog(@"Post %d: %@", idx, item.title);
-               }];
+               AFQiitaItem *item = nil;
+               while(item = response.next)
+                 NSLog(@"Post: %@", item.title);
              }
              failure:^(NSError *error) {
                NSLog(@"Error: %@", error);
@@ -125,11 +119,9 @@ AFQiitaClient *client = [[AFQiitaClient alloc] init];
 ### タグ一覧取得
 ```objective-c
 [client tagsWithSuccess:^(AFQiitaResponse *response) {
-                  NSArray *items = [response results];
-                  [items enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-                    AFQiitaTag *tag = obj;
-                    NSLog(@"Tag %d: %@", idx, tag.name);
-                  }];
+                  AFQiitaTag *tag = nil;
+                  while(tag = response.next)
+                    NSLog(@"Tag: %@", tag.name);
                 }
                 failure:^(NSError *error) {
                   NSLog(@"Error: %@", error);
@@ -141,11 +133,9 @@ AFQiitaClient *client = [[AFQiitaClient alloc] init];
 [client itemsWithSearchString:@"Hackathon"
                       stocked:NO
                       success:^(AFQiitaResponse *response) {
-                        NSArray *items = [response results];
-                        [items enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-                          AFQiitaItem *item = obj;
-                          NSLog(@"Post %d: %@", idx, item.title);
-                        }];
+                        AFQiitaItem *item = nil;
+                        while(item = response.next)
+                          NSLog(@"Post: %@", item.title);
                       }
                       failure:^(NSError *error) {
                         NSLog(@"Error: %@", error);
@@ -155,11 +145,9 @@ AFQiitaClient *client = [[AFQiitaClient alloc] init];
 ### 新着投稿の取得
 ```objective-c
 [client recentItemsWithSuccess:^(AFQiitaResponse *response) {
-                         NSArray *items = [response results];
-                         [items enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-                           AFQiitaItem *item = obj;
-                           NSLog(@"Post %d: %@", idx, item.title);
-                         }];
+                         AFQiitaItem *item = nil;
+                         while(item = response.next)
+                           NSLog(@"Post: %@", item.title);
                        }
                        failure:^(NSError *error) {
                          NSLog(@"Error: %@", error);
@@ -169,11 +157,9 @@ AFQiitaClient *client = [[AFQiitaClient alloc] init];
 ### 自分のストックした投稿の取得
 ```objective-c
 [client stockedItemsWithSuccess:^(AFQiitaResponse *response) {
-                          NSArray *items = [response results];
-                          [items enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-                            AFQiitaItem *item = obj;
-                            NSLog(@"Post %d: %@", idx, item.title);
-                          }];
+                          AFQiitaItem *item = nil;
+                          while(item = response.next)
+                            NSLog(@"Post: %@", item.title);
                         }
                         failure:^(NSError *error) {
                           NSLog(@"Error: %@", error);
@@ -228,7 +214,7 @@ AFQiitaItem *item = ...; // Received from API
 ### 投稿の削除
 ```objective-c
 [client deleteItem:item // Alias for deleteItemWithUUID:(NSString *)uuid
-           success:success:^ {
+           success:success:^(AFQiitaResponse *response) {
              NSLog(@"Successfully deleted");
            }
            failure:^(NSError *error) {

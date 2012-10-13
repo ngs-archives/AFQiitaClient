@@ -1,0 +1,779 @@
+[
+  {
+    "id": 9888,
+    "uuid": "4b0c5b71b49c6000d2e2",
+    "user": {
+      "name": "Wataru MIYAGUNI",
+      "url_name": "gongo@github",
+      "profile_image_url": "https://secure.gravatar.com/avatar/8519a654e3b51ef7dd19486a859ca91c?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png"
+    },
+    "title": "Qiita.el \\u4f5c\\u308a\\u307e\\u3057\\u305f!",
+    "body": "<p><a href=\"https://github.com/gongo/qiita-el\">https://github.com/gongo/qiita-el</a></p>\n\n<h2>\\u3053\\u308c\\u306f\\u4f55\\u304b</h2>\n\n<p>emacs \\u304b\\u3089 qiita \\u3092\\u64cd\\u4f5c\\u51fa\\u6765\\u307e\\u3059</p>\n\n<h2>\\u5fc5\\u8981\\u306a\\u3082\\u306e</h2>\n\n<ul>\n<li>Emacs\n\n<ul>\n<li>24.2 \\u3067\\u3057\\u304b\\u30c6\\u30b9\\u30c8\\u3057\\u3066\\u3044\\u307e\\u305b\\u3093\\u304c\\u3001\\u304d\\u3063\\u3068 24 \\u7cfb\\u306a\\u3089\\u5927\\u4e08\\u592b\\u300223 \\u306f\\u3069\\u3046\\u3060\\u308d\\u3046\\u3002</li>\n</ul></li>\n<li>Emacs lisp\n\n<ul>\n<li><a href=\"https://github.com/emacs-helm/helm\">helm</a></li>\n<li><a href=\"https://github.com/defunkt/markdown-mode\">markdown-mode</a></li>\n<li>\\u3044\\u305a\\u308c\\u3082\\u3001\\u6700\\u8fd1\\u6d41\\u884c\\u308a\\u306e package.el \\u3084 el-get\\u3001auto-install \\u3067\\u3069\\u3046\\u306b\\u304b\\u306a\\u308a\\u307e\\u3059</li>\n</ul></li>\n</ul>\n\n<h2>\\u4f7f\\u3044\\u65b9</h2>\n\n<h3>\\u6295\\u7a3f\\u8a18\\u4e8b\\u4e00\\u89a7(\\u65b0\\u7740\\u9806)</h3>\n<div class=\"code-frame\"><div class=\"highlight\"><pre>M-x qiita:items\n</pre>\n</div>\n</div>\n<p><img src=\"https://dl.dropbox.com/u/2532139/github-qiita-el/qiita-el-items.jpg\" alt=\"\"></p>\n\n<p>\\u30a2\\u30a4\\u30c6\\u30e0\\u3092\\u9078\\u629e\\u3057\\u3066 Enter \\u3092\\u62bc\\u3059\\u3068\\u3001\\u30d6\\u30e9\\u30a6\\u30b6\\u3067\\u305d\\u306e\\u8a18\\u4e8b\\u304c\\u8868\\u793a\\u3055\\u308c\\u307e\\u3059\\u3002</p>\n\n<h3>\\u81ea\\u8eab\\u306e\\u6295\\u7a3f\\u8a18\\u4e8b\\u4e00\\u89a7(\\u65b0\\u7740\\u9806)</h3>\n<div class=\"code-frame\"><div class=\"highlight\"><pre>C-u M-x qiita:items\n</pre>\n</div>\n</div>\n<p><img src=\"https://dl.dropbox.com/u/2532139/github-qiita-el/qiita-el-my-items.jpg\" alt=\"\"></p>\n\n<p>\\u3053\\u306e\\u72b6\\u614b\\u3067 TAB \\u3092\\u62bc\\u3059\\u3068\\u3001\\u30d6\\u30e9\\u30a6\\u30b6\\u3092\\u958b\\u304f\\u4ee5\\u5916\\u306b\\u3001\\u9078\\u629e\\u3057\\u305f\\u8a18\\u4e8b\\u3092\\u524a\\u9664\\u3067\\u304d\\u308b\\u30a2\\u30af\\u30b7\\u30e7\\u30f3\\u304c\\u78ba\\u8a8d\\u3067\\u304d\\u307e\\u3059\\u3002</p>\n\n<p><img src=\"https://dl.dropbox.com/u/2532139/github-qiita-el/qiita-el-my-items-actions.jpg\" alt=\"\"></p>\n\n<p>Delete \\u3092\\u9078\\u629e\\u3057\\u3066 Enter \\u3092\\u62bc\\u3059\\u3068\\u3001\\u305d\\u306e\\u8a18\\u4e8b\\u3092\\u524a\\u9664\\u3067\\u304d\\u307e\\u3059(y-or-n \\u78ba\\u8a8d\\u3042\\u308a)</p>\n\n<h3>\\u6295\\u7a3f</h3>\n\n<p>\\u73fe\\u5728\\u958b\\u3044\\u3066\\u3044\\u308b\\u30d0\\u30c3\\u30d5\\u30a1\\u4e0a\\u3067</p>\n<div class=\"code-frame\"><div class=\"highlight\"><pre>M-x qiita:post\n</pre>\n</div>\n</div>\n<p>\\u3068\\u5b9f\\u884c\\u3059\\u308b\\u3068 <strong>\\u9650\\u5b9a\\u5171\\u6709\\u30e2\\u30fc\\u30c9</strong> \\u3067\\u6295\\u7a3f\\u3055\\u308c\\u307e\\u3059\\u3002<br>\n\\u516c\\u958b\\u30e2\\u30fc\\u30c9\\u3067\\u6295\\u7a3f\\u3059\\u308b\\u5834\\u5408\\u306f</p>\n<div class=\"code-frame\"><div class=\"highlight\"><pre>C-u M-x qiita:post\n</pre>\n</div>\n</div>\n<p>\\u3068\\u5b9f\\u884c\\u3057\\u307e\\u3059\\u3002</p>\n\n<h4>\\u6295\\u7a3f\\u8a18\\u4e8b\\u306e\\u30eb\\u30fc\\u30eb\\u306b\\u3064\\u3044\\u3066</h4>\n\n<ol>\n<li>\\u958b\\u3044\\u3066\\u3044\\u308b\\u30d0\\u30c3\\u30d5\\u30a1\\u306e\\u4e2d\\u3067 header-1 \\u306e\\u8a18\\u6cd5 (# hoge \\u3068\\u304b ====== \\u304c\\u4e0b\\u7dda\\u306e\\u6587\\u5b57\\u5217) \\u306e\\u7b87\\u6240\\u3092\\u3001\\u8a18\\u4e8b\\u306e\\u30bf\\u30a4\\u30c8\\u30eb\\u3068\\u3057\\u3066\\u8a8d\\u8b58\\u3057\\u307e\\u3059(\\u305d\\u306e\\u7b87\\u6240\\u306f\\u672c\\u6587\\u306b\\u306f\\u5165\\u308a\\u307e\\u305b\\u3093)</li>\n<li><code>&lt;!-- tags hoge,fuga --&gt;</code> \\u3068\\u3059\\u308b\\u3068\\u3001\\u305d\\u306e\\u8a18\\u4e8b\\u306e\\u30bf\\u30b0\\u3068\\u3057\\u3066\\u767b\\u9332\\u3055\\u308c\\u307e\\u3059\\u3002</li>\n</ol>\n\n<p>\\u3069\\u3061\\u3089\\u3082</p>\n\n<ul>\n<li>\\u5fc5\\u9808\\u9805\\u76ee(\\u7121\\u3044\\u3068\\u30a8\\u30e9\\u30fc)</li>\n<li>\\u6587\\u66f8\\u4e2d\\u3067\\u6700\\u521d\\u306b\\u73fe\\u308c\\u305f\\u306e\\u3092\\u53d6\\u5f97\\u3059\\u308b(2\\u56de\\u76ee\\u4ee5\\u964d\\u306e header-1 \\u3084 tags \\u306f\\u305d\\u306e\\u307e\\u307e\\u672c\\u6587\\u306b\\u6b8b\\u308a\\u307e\\u3059)</li>\n</ul>\n\n<p>\\u3068\\u3044\\u3046\\u308f\\u3051\\u3067 markdown \\u4f8b\\u3067\\u3059</p>\n<div class=\"code-frame\"><div class=\"highlight\"><pre>qiita-el \\u30c6\\u30b9\\u30c8\\u6295\\u7a3f\n====================\n\n\\u307f\\u306a\\u3055\\u307e\\u304a\\u75b2\\u308c\\u69d8\\u3067\\u3059\\u3002\n\n&lt;!-- tags Emacs,Ruby --&gt;\n\n[gongo/qiita-el \\u00b7 GitHub](https://github.com/gongo/qiita-el)\n\n- List1\n- List2\n- List3\n\n1. hoge\n    1. hoge1\n2. fuga\n    1. fuga2\n3. hago\n    1. hago1\n    1. hago2\n    1. hago3\n\n```c\n#include &lt;stdio.h&gt;\n\nint main(void)\n{\n    printf(&quot;Hello, World!!&quot;);\n}\n```\n\n```ruby\np &#39;Hello, Wo\\&#39;rld!&#39;\n```\n\n&gt; 1\n&gt; 2\n&gt; 3\n</pre>\n</div>\n</div>\n<p>\\u3053\\u308c\\u3092\\u6295\\u7a3f\\u3059\\u308b\\u3068\\u3001 <a href=\"http://qiita.com/items/ee796188dc4945769282\">http://qiita.com/items/ee796188dc4945769282</a> \\u306e\\u3088\\u3046\\u306b\\u306a\\u308a\\u307e\\u3059\\u3002</p>\n\n<h3>\\u66f4\\u65b0</h3>\n\n<p>\\u66f4\\u65b0\\u3082\\u540c\\u3058\\u304f <code>M-x qiita:post</code> (<code>C-u M-x qiita:post</code> ) \\u3092\\u4f7f\\u7528\\u3057\\u307e\\u3059\\u3002<br>\n\\u672c\\u6587\\u4e2d\\u306b<code>&lt;!-- uuid xxxxxxxx --&gt;</code> \\u304c\\u5b58\\u5728\\u3059\\u308b\\u5834\\u5408\\u3001\\u305d\\u306e\\u8a18\\u4e8b <code>http://qiita.com/items/xxxxxxxx</code> \\u306b\\u5bfe\\u3059\\u308b <code>\\u66f4\\u65b0</code> \\u3068\\u898b\\u306a\\u3055\\u308c\\u307e\\u3059\\u3002</p>\n\n<p>\\u5148\\u7a0b\\u306e\\u6587\\u66f8\\u3092\\u4f8b\\u306b\\u3059\\u308b\\u3068</p>\n<div class=\"code-frame\"><div class=\"highlight\"><pre>\\u307f\\u306a\\u3055\\u307e\\u304a\\u75b2\\u308c\\u69d8\\u3067\\u3059\\u3002\n\n&lt;!-- tags Emacs,Ruby --&gt;\n&lt;!-- uuid ee796188dc4945769282 --&gt;\n</pre>\n</div>\n</div>\n<p>\\u3068\\u3044\\u3046\\u611f\\u3058\\u3067 uuid \\u3092\\u57cb\\u3081\\u3053\\u307f\\u307e\\u3059\\u3002</p>\n\n<h2>\\u307e\\u3068\\u3081</h2>\n\n<ul>\n<li><a href=\"https://github.com/gongo/qiita-el/issues\">https://github.com/gongo/qiita-el/issues</a>\n\n<ul>\n<li>\\u307e\\u3060\\u5b9f\\u88c5\\u3057\\u3066\\u306a\\u3044\\u3001\\u5b9f\\u88c5\\u3059\\u308b\\u4e88\\u5b9a\\u306e API \\u4e00\\u89a7</li>\n<li>\\u4f55\\u304b\\u8981\\u671b\\u304c\\u3042\\u308c\\u3070 \\u2191 \\u306b\\u767b\\u9332\\u304a\\u9858\\u3044\\u3057\\u307e\\u3059</li>\n</ul></li>\n</ul>\n",
+    "created_at": "2012-10-13 13:30:19 +0900",
+    "updated_at": "2012-10-13 13:30:19 +0900",
+    "created_at_in_words": "2\\u5206\\u524d",
+    "updated_at_in_words": "2\\u5206\\u524d",
+    "tags": [
+      {
+        "name": "Emacs",
+        "url_name": "Emacs",
+        "icon_url": "http://qiita.com/system/tags/icons/000/000/007/thumb/emacs.jpeg?1316130821",
+        "item_count": 182,
+        "follower_count": 1165,
+        "versions": []
+      }
+    ],
+    "stock_count": 0,
+    "stock_users": [],
+    "comment_count": 0,
+    "url": "http://qiita.com/items/4b0c5b71b49c6000d2e2",
+    "gist_url": null,
+    "private": false,
+    "created_at_as_seconds": 1350102619
+  },
+  {
+    "id": 9886,
+    "uuid": "3952c2972e164a7e3961",
+    "user": {
+      "name": "NiiKunihiro",
+      "url_name": "niikunihiro",
+      "profile_image_url": "https://si0.twimg.com/profile_images/2665283386/376724a878e1900e2f2307b75d8f41c0_normal.jpeg"
+    },
+    "title": "FuelPHP\\u306eoil generate migration\\u30b3\\u30de\\u30f3\\u30c9\\u306fbash\\u4f7f\\u3063\\u305f\\u65b9\\u304c\\u3044\\u3044\\u307f\\u305f\\u3044",
+    "body": "<p>\\u306f\\u3058\\u3081\\u3066\\u306e\\u301cFuelPHP\\u3084\\u3063\\u3066\\u3066\\u30e1\\u30e2\\u3002<br>\n\\u30bf\\u30a4\\u30c8\\u30eb\\u901a\\u308a\\u306a\\u3093\\u3067\\u3059\\u3051\\u3069\\u3001Mac\\u3067zsh\\u4f7f\\u3063\\u3066\\u3044\\u308b\\u3068\\u304d\\u306boil generate migration\\u30b3\\u30de\\u30f3\\u30c9\\u3092\\u5b9f\\u884c\\u3059\\u308b\\u3068\\u3001\\u306a\\u3093\\u304b\\u306b\\u5f15\\u3063\\u304b\\u304b\\u308b\\u3088\\u3046\\u3067\\u3059\\u3002</p>\n<div class=\"code-frame\"><div class=\"highlight\"><pre>% oil generate migration create_form name:string[50] email:string[100] comment:string[400] ip_address:string[39] user_agent:string[512] created_at:int updated_at:int\nzsh: no matches found: name:string[50]\n%\n</pre>\n</div>\n</div>\n<p>\\u306a\\u306e\\u3067\\u3001\\u3068\\u308a\\u3042\\u3048\\u305a\\u52d5\\u304b\\u3059\\u305f\\u3081\\u306b\\u3001bash\\u306b\\u5207\\u308a\\u66ff\\u3048\\u3066\\u5b9f\\u884c\\u3059\\u308b\\u3068\\u3044\\u3044\\u611f\\u3058\\u3067\\u3059\\u3002</p>\n<div class=\"code-frame\"><div class=\"highlight\"><pre>% bash\nbash-3.2$ oil generate migration create_form name:string[50] email:string[100] comment:string[400] ip_address:string[39] user_agent:string[512] created_at:int updated_at:int\n    Creating migration: /Library/WebServer/Documents/fuelphp/fuel/app/migrations/001_001_create_form_2.php\n</pre>\n</div>\n</div>\n<p>\\u304a\\u308f\\u308a</p>\n",
+    "created_at": "2012-10-13 12:55:21 +0900",
+    "updated_at": "2012-10-13 12:55:21 +0900",
+    "created_at_in_words": "37\\u5206\\u524d",
+    "updated_at_in_words": "37\\u5206\\u524d",
+    "tags": [
+      {
+        "name": "FuelPHP",
+        "url_name": "FuelPHP",
+        "icon_url": "http://qiita.com/system/tags/icons/000/000/330/thumb/fuel_logo_w240h280.png?1337158328",
+        "item_count": 11,
+        "follower_count": 28,
+        "versions": []
+      }
+    ],
+    "stock_count": 0,
+    "stock_users": [],
+    "comment_count": 0,
+    "url": "http://qiita.com/items/3952c2972e164a7e3961",
+    "gist_url": null,
+    "private": false,
+    "created_at_as_seconds": 1350100521
+  },
+  {
+    "id": 9885,
+    "uuid": "3d795d8029f8421c4cd6",
+    "user": {
+      "name": "NiiKunihiro",
+      "url_name": "niikunihiro",
+      "profile_image_url": "https://si0.twimg.com/profile_images/2665283386/376724a878e1900e2f2307b75d8f41c0_normal.jpeg"
+    },
+    "title": "Pear\\u306e\\u30a2\\u30c3\\u30d7\\u30c7\\u30fc\\u30c8",
+    "body": "<p>\\u5fd8\\u308c\\u304c\\u3061\\u306a\\u306e\\u3067\\u30e1\\u30e2\\u3063\\u3068\\u304d\\u307e\\u3059\\u3002</p>\n\n<p>\\u3068\\u308a\\u3042\\u3048\\u305a\\u30d0\\u30fc\\u30b8\\u30e7\\u30f3\\u78ba\\u8a8d</p>\n<div class=\"code-frame\"><div class=\"highlight\"><pre>$ pear version\n</pre>\n</div>\n</div>\n<p>\\u65b0\\u898f\\u30c1\\u30e3\\u30cd\\u30eb\\u3092\\u81ea\\u52d5\\u7684\\u306b\\u63a2\\u3059\\u3088\\u3046\\u306b\\u8a2d\\u5b9a</p>\n<div class=\"code-frame\"><div class=\"highlight\"><pre>$ sudo pear config-set auto_discover 1\n</pre>\n</div>\n</div>\n<p>\\u3042\\u3068\\u306f\\u3001\\u4e00\\u6c17\\u306b\\u3044\\u304d\\u307e\\u3059</p>\n<div class=\"code-frame\"><div class=\"highlight\"><pre>$ sudo pear channel-update pear.php.net\nPassword:\nUpdating channel &quot;pear.php.net&quot;\nUpdate of Channel &quot;pear.php.net&quot; succeeded\n$ sudo pear upgrade-all\n.\n.\n.\n.\nBuild process completed successfully\nInstalling &#39;/usr/lib/php/extensions/no-debug-non-zts-20090626/xdebug.so&#39;\nupgrade-all ok: channel://pecl.php.net/xdebug-2.2.0\nupgrade-all ok: channel://pear.php.net/File_Archive-1.5.5\nupgrade-all ok: channel://pear.phpmd.org/PHP_PMD-1.3.3\nupgrade-all ok: channel://pear.phpunit.de/PHP_CodeCoverage-1.1.2\nupgrade-all ok: channel://pear.phpunit.de/PHPUnit-3.6.11\nupgrade-all ok: channel://pear.phpunit.de/DbUnit-1.1.2\nupgrade-all ok: channel://pear.phpunit.de/PHPUnit_Selenium-1.2.7\nconfiguration option &quot;php_ini&quot; is not set to php.ini location\nYou should add &quot;extension=mongo.so&quot; to php.ini\nconfiguration option &quot;php_ini&quot; is not set to php.ini location\nYou should add &quot;extension=mongo.so&quot; to php.ini\nconfiguration option &quot;php_ini&quot; is not set to php.ini location\nYou should add &quot;extension=xdebug.so&quot; to php.ini\n$ \n</pre>\n</div>\n</div>\n<p>xdebug\\u304c\\u66f4\\u65b0\\u3055\\u308c\\u305f\\u3088\\u3046\\u3067\\u3059\\u3002<br>\n\\u958b\\u767a\\u74b0\\u5883\\u306f\\u3001\\u305f\\u307e\\u306b\\u306f\\u30a2\\u30c3\\u30d7\\u30c7\\u30fc\\u30c8\\u3057\\u3068\\u3044\\u305f\\u307b\\u3046\\u304c\\u3044\\u3044\\u3067\\u3059\\u306d\\u3002</p>\n",
+    "created_at": "2012-10-13 12:51:40 +0900",
+    "updated_at": "2012-10-13 12:51:40 +0900",
+    "created_at_in_words": "41\\u5206\\u524d",
+    "updated_at_in_words": "41\\u5206\\u524d",
+    "tags": [
+      {
+        "name": "pear",
+        "url_name": "pear",
+        "icon_url": "http://qiita.com/icons/thumb/missing.png",
+        "item_count": 3,
+        "follower_count": 4,
+        "versions": []
+      }
+    ],
+    "stock_count": 1,
+    "stock_users": [
+      "mAster_rAdio"
+    ],
+    "comment_count": 0,
+    "url": "http://qiita.com/items/3d795d8029f8421c4cd6",
+    "gist_url": null,
+    "private": false,
+    "created_at_as_seconds": 1350100300
+  },
+  {
+    "id": 9883,
+    "uuid": "bb2462c263e2e9f95de6",
+    "user": {
+      "name": "uk",
+      "url_name": "uk_ar",
+      "profile_image_url": "https://si0.twimg.com/profile_images/1681702121/icon_048_normal.png"
+    },
+    "title": "title2 ",
+    "body": "<p>\\u3082\\u4e00\\u5ea6\\u65b0\\u898f</p>\n",
+    "created_at": "2012-10-13 12:36:29 +0900",
+    "updated_at": "2012-10-13 12:36:29 +0900",
+    "created_at_in_words": "1\\u6642\\u9593\\u524d",
+    "updated_at_in_words": "1\\u6642\\u9593\\u524d",
+    "tags": [
+      {
+        "name": "api",
+        "url_name": "api",
+        "icon_url": "http://qiita.com/icons/thumb/missing.png",
+        "item_count": 13,
+        "follower_count": 1,
+        "versions": []
+      }
+    ],
+    "stock_count": 0,
+    "stock_users": [],
+    "comment_count": 0,
+    "url": "http://qiita.com/items/bb2462c263e2e9f95de6",
+    "gist_url": null,
+    "private": false,
+    "created_at_as_seconds": 1350099389
+  },
+  {
+    "id": 9882,
+    "uuid": "25d36a4025c44cece36f",
+    "user": {
+      "name": "uk",
+      "url_name": "uk_ar",
+      "profile_image_url": "https://si0.twimg.com/profile_images/1681702121/icon_048_normal.png"
+    },
+    "title": "title ",
+    "body": "<p>\\u65b0\\u898f\\u6295\\u7a3f<br>\n\\u4fee\\u6b63</p>\n\n<p>&lt;!--<br>\nLocal Variables:<br>\nqiita-file-uuid: &quot;25d36a4025c44cece36f&quot;<br>\nEnd:<br>\n--&gt;</p>\n",
+    "created_at": "2012-10-13 12:34:25 +0900",
+    "updated_at": "2012-10-13 12:35:37 +0900",
+    "created_at_in_words": "1\\u6642\\u9593\\u524d",
+    "updated_at_in_words": "1\\u6642\\u9593\\u524d",
+    "tags": [
+      {
+        "name": "api",
+        "url_name": "api",
+        "icon_url": "http://qiita.com/icons/thumb/missing.png",
+        "item_count": 13,
+        "follower_count": 1,
+        "versions": []
+      }
+    ],
+    "stock_count": 0,
+    "stock_users": [],
+    "comment_count": 0,
+    "url": "http://qiita.com/items/25d36a4025c44cece36f",
+    "gist_url": null,
+    "private": false,
+    "created_at_as_seconds": 1350099265
+  },
+  {
+    "id": 9880,
+    "uuid": "2dcd3bfe26d502db8676",
+    "user": {
+      "name": "Tsukasa Nishiyama",
+      "url_name": "nsymtks",
+      "profile_image_url": "https://secure.gravatar.com/avatar/50703eeada5773d17b95d19e163a23b4?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png"
+    },
+    "title": "Apache\\u306e\\u3044\\u306a\\u3044\\u74b0\\u5883\\u3067.htpasswd\\u3092\\u4f5c\\u308b",
+    "body": "<p>ID\\u304cfoo\\u3001\\u30d1\\u30b9\\u30ef\\u30fc\\u30c9\\u304cbar\\u306a.htpasswd\\u3092\\u4f5c\\u308b\\u306b\\u306f\\u3001</p>\n<div class=\"code-frame\"><div class=\"code-lang\"><span class=\"bold\"></span></div><div class=\"highlight\"><pre><span class=\"nb\">printf</span> <span class=\"s2\">&quot;foo:$(openssl passwd -crypt bar)\n&quot;</span> &gt;&gt; .htpasswd\n</pre>\n</div>\n</div>\n<p>\\u3068\\u3059\\u308c\\u3070\\u3088\\u3044\\u3002<br>\n\\u5fc5\\u8981\\u306b\\u306a\\u308b\\u306e\\u306fnginx\\u3067Basic\\u8a8d\\u8a3c\\u3055\\u305b\\u305f\\u3044\\u6642\\u3068\\u304b\\u304b\\u306a\\u3002<br>\n\\u308f\\u3056\\u308f\\u3056Apache\\u3044\\u308c\\u305f\\u304f\\u306a\\u3044\\u3057\\u306d(&#39;A`)y-~</p>\n",
+    "created_at": "2012-10-13 12:00:23 +0900",
+    "updated_at": "2012-10-13 12:00:23 +0900",
+    "created_at_in_words": "2\\u6642\\u9593\\u524d",
+    "updated_at_in_words": "2\\u6642\\u9593\\u524d",
+    "tags": [
+      {
+        "name": "Linux",
+        "url_name": "Linux",
+        "icon_url": "http://qiita.com/system/tags/icons/000/000/044/thumb/linux.png?1319803291",
+        "item_count": 170,
+        "follower_count": 433,
+        "versions": []
+      },
+      {
+        "name": "nginx",
+        "url_name": "nginx",
+        "icon_url": "http://qiita.com/system/tags/icons/000/000/061/thumb/nginx_logo.gif?1336983666",
+        "item_count": 30,
+        "follower_count": 195,
+        "versions": []
+      }
+    ],
+    "stock_count": 1,
+    "stock_users": [
+      "mAster_rAdio"
+    ],
+    "comment_count": 0,
+    "url": "http://qiita.com/items/2dcd3bfe26d502db8676",
+    "gist_url": null,
+    "private": false,
+    "created_at_as_seconds": 1350097223
+  },
+  {
+    "id": 9878,
+    "uuid": "92085647acd4271429bc",
+    "user": {
+      "name": "Sho Kusano",
+      "url_name": "rosylilly",
+      "profile_image_url": "https://secure.gravatar.com/avatar/2e7087b86608d4497c209eb9ba14d8f5?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png"
+    },
+    "title": "qiita api test",
+    "body": "<p>!?</p>\n",
+    "created_at": "2012-10-13 11:24:46 +0900",
+    "updated_at": "2012-10-13 11:24:46 +0900",
+    "created_at_in_words": "2\\u6642\\u9593\\u524d",
+    "updated_at_in_words": "2\\u6642\\u9593\\u524d",
+    "tags": [
+      {
+        "name": "test",
+        "url_name": "test",
+        "icon_url": "http://qiita.com/icons/thumb/missing.png",
+        "item_count": 33,
+        "follower_count": 26,
+        "versions": []
+      }
+    ],
+    "stock_count": 0,
+    "stock_users": [],
+    "comment_count": 0,
+    "url": "http://qiita.com/items/92085647acd4271429bc",
+    "gist_url": null,
+    "private": false,
+    "created_at_as_seconds": 1350095086
+  },
+  {
+    "id": 9877,
+    "uuid": "ebb63c695e194efb6da8",
+    "user": {
+      "name": "uk",
+      "url_name": "uk_ar",
+      "profile_image_url": "https://si0.twimg.com/profile_images/1681702121/icon_048_normal.png"
+    },
+    "title": "API\\u306e\\u30c6\\u30b9\\u30c8 ",
+    "body": "<h1>hoge</h1>\n\n<p>\\u65b0\\u898f<br>\n\\u66f4\\u65b0<br>\n2\\u56de\\u76ee\\u306e\\u66f4\\u65b0<br>\n3\\u56de\\u76ee\\u306e\\u66f4\\u65b0<br>\n4\\u56de\\u76ee\\u306e\\u66f4\\u65b0<br>\n5\\u56de\\u76ee\\u306e\\u66f4\\u65b0<br>\n6\\u56de\\u76ee\\u306e\\u66f4\\u65b0<br>\n\\u30d5\\u30a1\\u30a4\\u30eb\\u304b\\u3089uuid\\u306e\\u8aad\\u307f\\u8fbc\\u307f<br>\nuuid\\u306e\\u30b3\\u30e1\\u30f3\\u30c8\\u30a2\\u30a6\\u30c8<br>\nmarkdown\\u306e\\u30b3\\u30e1\\u30f3\\u30c8\\u30a2\\u30a6\\u30c8<br>\nOK?dayo</p>\n\n<p>&lt;!--<br>\nLocal Variables:<br>\nqiita-file-uuid: &quot;ebb63c695e194efb6da8&quot;<br>\nEnd:<br>\n --&gt;</p>\n",
+    "created_at": "2012-10-13 08:40:48 +0900",
+    "updated_at": "2012-10-13 12:24:59 +0900",
+    "created_at_in_words": "5\\u6642\\u9593\\u524d",
+    "updated_at_in_words": "1\\u6642\\u9593\\u524d",
+    "tags": [
+      {
+        "name": "c#",
+        "url_name": "c%23",
+        "icon_url": "http://qiita.com/system/tags/icons/000/000/187/thumb/C_Sharp.png?1328867786",
+        "item_count": 94,
+        "follower_count": 191,
+        "versions": []
+      },
+      {
+        "name": "Emacs",
+        "url_name": "Emacs",
+        "icon_url": "http://qiita.com/system/tags/icons/000/000/007/thumb/emacs.jpeg?1316130821",
+        "item_count": 182,
+        "follower_count": 1165,
+        "versions": []
+      },
+      {
+        "name": "api",
+        "url_name": "api",
+        "icon_url": "http://qiita.com/icons/thumb/missing.png",
+        "item_count": 13,
+        "follower_count": 1,
+        "versions": []
+      }
+    ],
+    "stock_count": 0,
+    "stock_users": [],
+    "comment_count": 0,
+    "url": "http://qiita.com/items/ebb63c695e194efb6da8",
+    "gist_url": null,
+    "private": false,
+    "created_at_as_seconds": 1350085248
+  },
+  {
+    "id": 9875,
+    "uuid": "4e57a712c71512bc4a2b",
+    "user": {
+      "name": "uk",
+      "url_name": "uk_ar",
+      "profile_image_url": "https://si0.twimg.com/profile_images/1681702121/icon_048_normal.png"
+    },
+    "title": "API\\u306e\\u30c6\\u30b9\\u30c8 ",
+    "body": "<h1>hoge</h1>\n",
+    "created_at": "2012-10-13 08:23:27 +0900",
+    "updated_at": "2012-10-13 08:23:27 +0900",
+    "created_at_in_words": "5\\u6642\\u9593\\u524d",
+    "updated_at_in_words": "5\\u6642\\u9593\\u524d",
+    "tags": [
+      {
+        "name": "c#",
+        "url_name": "c%23",
+        "icon_url": "http://qiita.com/system/tags/icons/000/000/187/thumb/C_Sharp.png?1328867786",
+        "item_count": 94,
+        "follower_count": 191,
+        "versions": []
+      },
+      {
+        "name": "Emacs",
+        "url_name": "Emacs",
+        "icon_url": "http://qiita.com/system/tags/icons/000/000/007/thumb/emacs.jpeg?1316130821",
+        "item_count": 182,
+        "follower_count": 1165,
+        "versions": []
+      },
+      {
+        "name": "api",
+        "url_name": "api",
+        "icon_url": "http://qiita.com/icons/thumb/missing.png",
+        "item_count": 13,
+        "follower_count": 1,
+        "versions": []
+      }
+    ],
+    "stock_count": 0,
+    "stock_users": [],
+    "comment_count": 0,
+    "url": "http://qiita.com/items/4e57a712c71512bc4a2b",
+    "gist_url": null,
+    "private": false,
+    "created_at_as_seconds": 1350084207
+  },
+  {
+    "id": 9874,
+    "uuid": "a7efac2217d7b63226cb",
+    "user": {
+      "name": "Atsushi NAGASE",
+      "url_name": "ngs",
+      "profile_image_url": "https://secure.gravatar.com/avatar/53bc8fa21f71dd8e63f3c94275c56191?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png"
+    },
+    "title": "AFQiitaClient \\u306e\\u4f7f\\u3044\\u65b9",
+    "body": "<p><strong><a href=\"https://github.com/ngs/AFQiitaClient\">AFQiitaClient</a> \\u306f <a href=\"http://qiita.com/docs\">Qiita API</a> \\u3092 Cocoa \\u3067\\u64cd\\u308b\\u30af\\u30e9\\u30a4\\u30a2\\u30f3\\u30c8\\u3067\\u3059</strong></p>\n\n<p><a href=\"https://github.com/ngs/AFQiitaClient\">https://github.com/ngs/AFQiitaClient</a></p>\n\n<p><code>AFQiitaClient</code> \\u306f <code>AFHTTPClient</code> \\u30b5\\u30d6\\u30af\\u30e9\\u30b9\\u3067\\u3001<a href=\"https://github.com/afnetworking/afnetworking\">AFNetworking</a> \\u306e\\u30bd\\u30fc\\u30b9\\u30b3\\u30fc\\u30c9\\u3068\\u5171\\u306b\\u3001\\u30d7\\u30ed\\u30b8\\u30a7\\u30af\\u30c8\\u306b\\u8ffd\\u52a0\\u3057\\u3066\\u4f7f\\u7528\\u3057\\u307e\\u3059\\u3002</p>\n\n<h3>\\u521d\\u671f\\u5316</h3>\n<div class=\"code-frame\"><div class=\"code-lang\"><span class=\"bold\"></span></div><div class=\"highlight\"><pre><span class=\"n\">AFQiitaClient</span> <span class=\"o\">*</span><span class=\"n\">client</span> <span class=\"o\">=</span> <span class=\"p\">[[</span><span class=\"n\">AFQiitaClient</span> <span class=\"n\">alloc</span><span class=\"p\">]</span> <span class=\"n\">init</span><span class=\"p\">];</span>\n</pre>\n</div>\n</div>\n<h3>\\u8a8d\\u8a3c</h3>\n<div class=\"code-frame\"><div class=\"code-lang\"><span class=\"bold\"></span></div><div class=\"highlight\"><pre><span class=\"p\">[</span><span class=\"n\">client</span> <span class=\"nl\">authenticateWithUsername:</span><span class=\"s\">@&quot;ngs&quot;</span>\n                        <span class=\"nl\">password:</span><span class=\"s\">@&quot;qwerty1234!?&quot;</span>\n                        <span class=\"nl\">success:success:</span><span class=\"o\">^</span> <span class=\"p\">{</span>\n                          <span class=\"n\">NSLog</span><span class=\"p\">(</span><span class=\"s\">@&quot;Success&quot;</span><span class=\"p\">);</span>\n                        <span class=\"p\">}</span>\n                        <span class=\"nl\">failure:</span><span class=\"o\">^</span><span class=\"p\">(</span><span class=\"n\">NSError</span> <span class=\"o\">*</span><span class=\"n\">error</span><span class=\"p\">)</span> <span class=\"p\">{</span>\n                          <span class=\"n\">NSLog</span><span class=\"p\">(</span><span class=\"s\">@&quot;Error: %@&quot;</span><span class=\"p\">,</span> <span class=\"n\">error</span><span class=\"p\">);</span>\n                        <span class=\"p\">}];</span>\n</pre>\n</div>\n</div>\n<h3>\\u30da\\u30fc\\u30b8\\u30f3\\u30b0</h3>\n\n<p><code>AFQiitaResponse</code> \\u306b\\u306f <code>firstURL</code>, <code>prevURL</code>, <code>nextURL</code>, <code>prevURL</code> \\u3068\\u3044\\u3046 NSURL \\u3092\\u8fd4\\u5374\\u3059\\u308b\\u30a4\\u30f3\\u30b9\\u30bf\\u30f3\\u30b9\\u30e1\\u30bd\\u30c3\\u30c9\\u304c\\u3042\\u308b\\u3002</p>\n<div class=\"code-frame\"><div class=\"code-lang\"><span class=\"bold\"></span></div><div class=\"highlight\"><pre><span class=\"p\">[</span><span class=\"n\">client</span> <span class=\"nl\">tagsWithSuccess:</span><span class=\"o\">^</span><span class=\"p\">(</span><span class=\"n\">AFQiitaResponse</span> <span class=\"o\">*</span><span class=\"n\">response</span><span class=\"p\">)</span> <span class=\"p\">{</span>\n                  <span class=\"k\">if</span><span class=\"p\">(</span><span class=\"n\">response</span><span class=\"p\">.</span><span class=\"n\">nextURL</span><span class=\"p\">)</span> <span class=\"p\">{</span>\n                    <span class=\"p\">[</span><span class=\"n\">client</span> <span class=\"nl\">getURL:</span><span class=\"n\">response</span><span class=\"p\">.</span><span class=\"n\">nextURL</span>\n                           <span class=\"nl\">success:</span><span class=\"o\">^</span><span class=\"p\">(</span><span class=\"n\">AFQiitaResponse</span> <span class=\"o\">*</span><span class=\"n\">response</span><span class=\"p\">)</span> <span class=\"p\">{</span> <span class=\"p\">...</span> <span class=\"p\">}</span>\n                           <span class=\"nl\">failure:</span><span class=\"o\">^</span><span class=\"p\">(</span><span class=\"n\">NSError</span> <span class=\"o\">*</span><span class=\"n\">error</span><span class=\"p\">)</span> <span class=\"p\">{</span> <span class=\"p\">...</span> <span class=\"p\">}];</span>\n                  <span class=\"p\">}</span> <span class=\"k\">else</span> <span class=\"p\">{</span>\n                    <span class=\"n\">NSLog</span><span class=\"p\">(</span><span class=\"s\">@&quot;No more tags&quot;</span><span class=\"p\">);</span>\n                  <span class=\"p\">}</span>\n                <span class=\"p\">}</span>\n                <span class=\"nl\">failure:</span><span class=\"o\">^</span><span class=\"p\">(</span><span class=\"n\">NSError</span> <span class=\"o\">*</span><span class=\"n\">error</span><span class=\"p\">)</span> <span class=\"p\">{</span>\n                  <span class=\"n\">NSLog</span><span class=\"p\">(</span><span class=\"s\">@&quot;Error: %@&quot;</span><span class=\"p\">,</span> <span class=\"n\">error</span><span class=\"p\">);</span>\n                <span class=\"p\">}];</span>\n</pre>\n</div>\n</div>\n<h3>\\u6b8b\\u308a\\u30ea\\u30af\\u30a8\\u30b9\\u30c8\\u53ef\\u80fd\\u6570\\u3068Rate Limit\\u53d6\\u5f97</h3>\n<div class=\"code-frame\"><div class=\"code-lang\"><span class=\"bold\"></span></div><div class=\"highlight\"><pre><span class=\"p\">[</span><span class=\"n\">client</span> <span class=\"nl\">rateLimitWithSuccess:</span><span class=\"o\">^</span><span class=\"p\">(</span><span class=\"n\">NSInteger</span> <span class=\"n\">remaining</span><span class=\"p\">,</span> <span class=\"n\">NSInteger</span> <span class=\"n\">limit</span><span class=\"p\">){</span>\n                        <span class=\"n\">NSLog</span><span class=\"p\">(</span><span class=\"s\">@&quot;Success: Limted to %d, %d remaining&quot;</span><span class=\"p\">,</span> <span class=\"n\">limit</span><span class=\"p\">,</span> <span class=\"n\">remaining</span><span class=\"p\">);</span>\n                      <span class=\"p\">}</span>\n                      <span class=\"nl\">failure:</span><span class=\"o\">^</span><span class=\"p\">(</span><span class=\"n\">NSError</span> <span class=\"o\">*</span><span class=\"n\">error</span><span class=\"p\">)</span> <span class=\"p\">{</span>\n                        <span class=\"n\">NSLog</span><span class=\"p\">(</span><span class=\"s\">@&quot;Error: %@&quot;</span><span class=\"p\">,</span> <span class=\"n\">error</span><span class=\"p\">);</span>\n                      <span class=\"p\">}];</span>\n</pre>\n</div>\n</div>\n<h3>\\u30ea\\u30af\\u30a8\\u30b9\\u30c8\\u30e6\\u30fc\\u30b6\\u30fc\\u306e\\u60c5\\u5831\\u53d6\\u5f97</h3>\n<div class=\"code-frame\"><div class=\"code-lang\"><span class=\"bold\"></span></div><div class=\"highlight\"><pre><span class=\"p\">[</span><span class=\"n\">client</span> <span class=\"nl\">currentUserWithSuccess:</span><span class=\"o\">^</span><span class=\"p\">(</span><span class=\"n\">AFQiitaResponse</span> <span class=\"o\">*</span><span class=\"n\">response</span><span class=\"p\">)</span> <span class=\"p\">{</span>\n                         <span class=\"n\">AFQiitaUser</span> <span class=\"o\">*</span><span class=\"n\">me</span> <span class=\"o\">=</span> <span class=\"p\">[</span><span class=\"n\">response</span> <span class=\"n\">first</span><span class=\"p\">];</span>\n                         <span class=\"n\">NSLog</span><span class=\"p\">(</span><span class=\"s\">@&quot;Success: Hello, my name is %@&quot;</span><span class=\"p\">,</span> <span class=\"n\">me</span><span class=\"p\">.</span><span class=\"n\">name</span><span class=\"p\">);</span>\n                       <span class=\"p\">}</span>\n                       <span class=\"nl\">failure:</span><span class=\"o\">^</span><span class=\"p\">(</span><span class=\"n\">NSError</span> <span class=\"o\">*</span><span class=\"n\">error</span><span class=\"p\">)</span> <span class=\"p\">{</span>\n                         <span class=\"n\">NSLog</span><span class=\"p\">(</span><span class=\"s\">@&quot;Error: %@&quot;</span><span class=\"p\">,</span> <span class=\"n\">error</span><span class=\"p\">);</span>\n                       <span class=\"p\">}];</span>\n</pre>\n</div>\n</div>\n<h3>\\u7279\\u5b9a\\u30e6\\u30fc\\u30b6\\u30fc\\u306e\\u60c5\\u5831\\u53d6\\u5f97</h3>\n<div class=\"code-frame\"><div class=\"code-lang\"><span class=\"bold\"></span></div><div class=\"highlight\"><pre><span class=\"p\">[</span><span class=\"n\">client</span> <span class=\"nl\">userWithUsername:</span><span class=\"s\">@&quot;yaotti@github&quot;</span>\n                 <span class=\"nl\">success:</span><span class=\"o\">^</span><span class=\"p\">(</span><span class=\"n\">AFQiitaResponse</span> <span class=\"o\">*</span><span class=\"n\">response</span><span class=\"p\">)</span> <span class=\"p\">{</span>\n                   <span class=\"n\">AFQiitaUser</span> <span class=\"o\">*</span><span class=\"n\">user</span> <span class=\"o\">=</span> <span class=\"p\">[</span><span class=\"n\">response</span> <span class=\"n\">first</span><span class=\"p\">];</span>\n                   <span class=\"n\">NSLog</span><span class=\"p\">(</span><span class=\"s\">@&quot;Success: %@ has %d followers&quot;</span><span class=\"p\">,</span> <span class=\"n\">user</span><span class=\"p\">.</span><span class=\"n\">name</span><span class=\"p\">,</span> <span class=\"n\">user</span><span class=\"p\">.</span><span class=\"n\">followers</span><span class=\"p\">);</span>\n                 <span class=\"p\">}</span>\n                 <span class=\"nl\">failure:</span><span class=\"o\">^</span><span class=\"p\">(</span><span class=\"n\">NSError</span> <span class=\"o\">*</span><span class=\"n\">error</span><span class=\"p\">)</span> <span class=\"p\">{</span>\n                   <span class=\"n\">NSLog</span><span class=\"p\">(</span><span class=\"s\">@&quot;Error: %@&quot;</span><span class=\"p\">,</span> <span class=\"n\">error</span><span class=\"p\">);</span>\n                 <span class=\"p\">}];</span>\n</pre>\n</div>\n</div>\n<h3>\\u7279\\u5b9a\\u30e6\\u30fc\\u30b6\\u30fc\\u306e\\u6295\\u7a3f\\u53d6\\u5f97</h3>\n<div class=\"code-frame\"><div class=\"code-lang\"><span class=\"bold\"></span></div><div class=\"highlight\"><pre><span class=\"p\">[</span><span class=\"n\">client</span> <span class=\"nl\">itemsWithUsername:</span><span class=\"s\">@&quot;yaotti@github&quot;</span>\n                  <span class=\"nl\">success:</span><span class=\"o\">^</span><span class=\"p\">(</span><span class=\"n\">AFQiitaResponse</span> <span class=\"o\">*</span><span class=\"n\">response</span><span class=\"p\">)</span> <span class=\"p\">{</span>\n                    <span class=\"n\">NSArray</span> <span class=\"o\">*</span><span class=\"n\">items</span> <span class=\"o\">=</span> <span class=\"p\">[</span><span class=\"n\">response</span> <span class=\"n\">results</span><span class=\"p\">];</span>\n                    <span class=\"p\">[</span><span class=\"n\">items</span> <span class=\"nl\">enumerateObjectsUsingBlock:</span><span class=\"o\">^</span><span class=\"p\">(</span><span class=\"kt\">id</span> <span class=\"n\">obj</span><span class=\"p\">,</span> <span class=\"n\">NSUInteger</span> <span class=\"n\">idx</span><span class=\"p\">,</span> <span class=\"kt\">BOOL</span> <span class=\"o\">*</span><span class=\"n\">stop</span><span class=\"p\">)</span> <span class=\"p\">{</span>\n                      <span class=\"n\">AFQiitaItem</span> <span class=\"o\">*</span><span class=\"n\">item</span> <span class=\"o\">=</span> <span class=\"n\">obj</span><span class=\"p\">;</span>\n                      <span class=\"n\">NSLog</span><span class=\"p\">(</span><span class=\"s\">@&quot;Post %d: %@&quot;</span><span class=\"p\">,</span> <span class=\"n\">idx</span><span class=\"p\">,</span> <span class=\"n\">item</span><span class=\"p\">.</span><span class=\"n\">title</span><span class=\"p\">);</span>\n                    <span class=\"p\">}];</span>\n                  <span class=\"p\">}</span>\n                  <span class=\"nl\">failure:</span><span class=\"o\">^</span><span class=\"p\">(</span><span class=\"n\">NSError</span> <span class=\"o\">*</span><span class=\"n\">error</span><span class=\"p\">)</span> <span class=\"p\">{</span>\n                    <span class=\"n\">NSLog</span><span class=\"p\">(</span><span class=\"s\">@&quot;Error: %@&quot;</span><span class=\"p\">,</span> <span class=\"n\">error</span><span class=\"p\">);</span>\n                  <span class=\"p\">}];</span>\n</pre>\n</div>\n</div>\n<h3>\\u7279\\u5b9a\\u30e6\\u30fc\\u30b6\\u30fc\\u306e\\u30b9\\u30c8\\u30c3\\u30af\\u3057\\u305f\\u6295\\u7a3f\\u53d6\\u5f97</h3>\n<div class=\"code-frame\"><div class=\"code-lang\"><span class=\"bold\"></span></div><div class=\"highlight\"><pre><span class=\"p\">[</span><span class=\"n\">client</span> <span class=\"nl\">stockedItemsWithUsername:</span><span class=\"s\">@&quot;yaotti@github&quot;</span>\n                         <span class=\"nl\">success:</span><span class=\"o\">^</span><span class=\"p\">(</span><span class=\"n\">AFQiitaResponse</span> <span class=\"o\">*</span><span class=\"n\">response</span><span class=\"p\">)</span> <span class=\"p\">{</span>\n                           <span class=\"n\">NSArray</span> <span class=\"o\">*</span><span class=\"n\">items</span> <span class=\"o\">=</span> <span class=\"p\">[</span><span class=\"n\">response</span> <span class=\"n\">results</span><span class=\"p\">];</span>\n                           <span class=\"p\">[</span><span class=\"n\">items</span> <span class=\"nl\">enumerateObjectsUsingBlock:</span><span class=\"o\">^</span><span class=\"p\">(</span><span class=\"kt\">id</span> <span class=\"n\">obj</span><span class=\"p\">,</span> <span class=\"n\">NSUInteger</span> <span class=\"n\">idx</span><span class=\"p\">,</span> <span class=\"kt\">BOOL</span> <span class=\"o\">*</span><span class=\"n\">stop</span><span class=\"p\">)</span> <span class=\"p\">{</span>\n                             <span class=\"n\">AFQiitaItem</span> <span class=\"o\">*</span><span class=\"n\">item</span> <span class=\"o\">=</span> <span class=\"n\">obj</span><span class=\"p\">;</span>\n                             <span class=\"n\">NSLog</span><span class=\"p\">(</span><span class=\"s\">@&quot;Post %d: %@&quot;</span><span class=\"p\">,</span> <span class=\"n\">idx</span><span class=\"p\">,</span> <span class=\"n\">item</span><span class=\"p\">.</span><span class=\"n\">title</span><span class=\"p\">);</span>\n                           <span class=\"p\">}];</span>\n                         <span class=\"p\">}</span>\n                         <span class=\"nl\">failure:</span><span class=\"o\">^</span><span class=\"p\">(</span><span class=\"n\">NSError</span> <span class=\"o\">*</span><span class=\"n\">error</span><span class=\"p\">)</span> <span class=\"p\">{</span>\n                           <span class=\"n\">NSLog</span><span class=\"p\">(</span><span class=\"s\">@&quot;Error: %@&quot;</span><span class=\"p\">,</span> <span class=\"n\">error</span><span class=\"p\">);</span>\n                         <span class=\"p\">}];</span>\n</pre>\n</div>\n</div>\n<h3>\\u7279\\u5b9a\\u30bf\\u30b0\\u306e\\u6295\\u7a3f\\u53d6\\u5f97</h3>\n<div class=\"code-frame\"><div class=\"code-lang\"><span class=\"bold\"></span></div><div class=\"highlight\"><pre><span class=\"p\">[</span><span class=\"n\">client</span> <span class=\"nl\">itemsWithTag:</span><span class=\"s\">@&quot;Rails&quot;</span>\n             <span class=\"nl\">success:</span><span class=\"o\">^</span><span class=\"p\">(</span><span class=\"n\">AFQiitaResponse</span> <span class=\"o\">*</span><span class=\"n\">response</span><span class=\"p\">)</span> <span class=\"p\">{</span>\n               <span class=\"n\">NSArray</span> <span class=\"o\">*</span><span class=\"n\">items</span> <span class=\"o\">=</span> <span class=\"p\">[</span><span class=\"n\">response</span> <span class=\"n\">results</span><span class=\"p\">];</span>\n               <span class=\"p\">[</span><span class=\"n\">items</span> <span class=\"nl\">enumerateObjectsUsingBlock:</span><span class=\"o\">^</span><span class=\"p\">(</span><span class=\"kt\">id</span> <span class=\"n\">obj</span><span class=\"p\">,</span> <span class=\"n\">NSUInteger</span> <span class=\"n\">idx</span><span class=\"p\">,</span> <span class=\"kt\">BOOL</span> <span class=\"o\">*</span><span class=\"n\">stop</span><span class=\"p\">)</span> <span class=\"p\">{</span>\n                 <span class=\"n\">AFQiitaItem</span> <span class=\"o\">*</span><span class=\"n\">item</span> <span class=\"o\">=</span> <span class=\"n\">obj</span><span class=\"p\">;</span>\n                 <span class=\"n\">NSLog</span><span class=\"p\">(</span><span class=\"s\">@&quot;Post %d: %@&quot;</span><span class=\"p\">,</span> <span class=\"n\">idx</span><span class=\"p\">,</span> <span class=\"n\">item</span><span class=\"p\">.</span><span class=\"n\">title</span><span class=\"p\">);</span>\n               <span class=\"p\">}];</span>\n             <span class=\"p\">}</span>\n             <span class=\"nl\">failure:</span><span class=\"o\">^</span><span class=\"p\">(</span><span class=\"n\">NSError</span> <span class=\"o\">*</span><span class=\"n\">error</span><span class=\"p\">)</span> <span class=\"p\">{</span>\n               <span class=\"n\">NSLog</span><span class=\"p\">(</span><span class=\"s\">@&quot;Error: %@&quot;</span><span class=\"p\">,</span> <span class=\"n\">error</span><span class=\"p\">);</span>\n             <span class=\"p\">}];</span>\n</pre>\n</div>\n</div>\n<h3>\\u30bf\\u30b0\\u4e00\\u89a7\\u53d6\\u5f97</h3>\n<div class=\"code-frame\"><div class=\"code-lang\"><span class=\"bold\"></span></div><div class=\"highlight\"><pre><span class=\"p\">[</span><span class=\"n\">client</span> <span class=\"nl\">tagsWithSuccess:</span><span class=\"o\">^</span><span class=\"p\">(</span><span class=\"n\">AFQiitaResponse</span> <span class=\"o\">*</span><span class=\"n\">response</span><span class=\"p\">)</span> <span class=\"p\">{</span>\n                  <span class=\"n\">NSArray</span> <span class=\"o\">*</span><span class=\"n\">items</span> <span class=\"o\">=</span> <span class=\"p\">[</span><span class=\"n\">response</span> <span class=\"n\">results</span><span class=\"p\">];</span>\n                  <span class=\"p\">[</span><span class=\"n\">items</span> <span class=\"nl\">enumerateObjectsUsingBlock:</span><span class=\"o\">^</span><span class=\"p\">(</span><span class=\"kt\">id</span> <span class=\"n\">obj</span><span class=\"p\">,</span> <span class=\"n\">NSUInteger</span> <span class=\"n\">idx</span><span class=\"p\">,</span> <span class=\"kt\">BOOL</span> <span class=\"o\">*</span><span class=\"n\">stop</span><span class=\"p\">)</span> <span class=\"p\">{</span>\n                    <span class=\"n\">AFQiitaTag</span> <span class=\"o\">*</span><span class=\"n\">tag</span> <span class=\"o\">=</span> <span class=\"n\">obj</span><span class=\"p\">;</span>\n                    <span class=\"n\">NSLog</span><span class=\"p\">(</span><span class=\"s\">@&quot;Tag %d: %@&quot;</span><span class=\"p\">,</span> <span class=\"n\">idx</span><span class=\"p\">,</span> <span class=\"n\">tag</span><span class=\"p\">.</span><span class=\"n\">name</span><span class=\"p\">);</span>\n                  <span class=\"p\">}];</span>\n                <span class=\"p\">}</span>\n                <span class=\"nl\">failure:</span><span class=\"o\">^</span><span class=\"p\">(</span><span class=\"n\">NSError</span> <span class=\"o\">*</span><span class=\"n\">error</span><span class=\"p\">)</span> <span class=\"p\">{</span>\n                  <span class=\"n\">NSLog</span><span class=\"p\">(</span><span class=\"s\">@&quot;Error: %@&quot;</span><span class=\"p\">,</span> <span class=\"n\">error</span><span class=\"p\">);</span>\n                <span class=\"p\">}];</span>\n</pre>\n</div>\n</div>\n<h3>\\u691c\\u7d22\\u7d50\\u679c\\u53d6\\u5f97</h3>\n<div class=\"code-frame\"><div class=\"code-lang\"><span class=\"bold\"></span></div><div class=\"highlight\"><pre><span class=\"p\">[</span><span class=\"n\">client</span> <span class=\"nl\">itemsWithSearchString:</span><span class=\"s\">@&quot;Hackathon&quot;</span>\n                      <span class=\"nl\">stocked:</span><span class=\"n\">NO</span>\n                      <span class=\"nl\">success:</span><span class=\"o\">^</span><span class=\"p\">(</span><span class=\"n\">AFQiitaResponse</span> <span class=\"o\">*</span><span class=\"n\">response</span><span class=\"p\">)</span> <span class=\"p\">{</span>\n                        <span class=\"n\">NSArray</span> <span class=\"o\">*</span><span class=\"n\">items</span> <span class=\"o\">=</span> <span class=\"p\">[</span><span class=\"n\">response</span> <span class=\"n\">results</span><span class=\"p\">];</span>\n                        <span class=\"p\">[</span><span class=\"n\">items</span> <span class=\"nl\">enumerateObjectsUsingBlock:</span><span class=\"o\">^</span><span class=\"p\">(</span><span class=\"kt\">id</span> <span class=\"n\">obj</span><span class=\"p\">,</span> <span class=\"n\">NSUInteger</span> <span class=\"n\">idx</span><span class=\"p\">,</span> <span class=\"kt\">BOOL</span> <span class=\"o\">*</span><span class=\"n\">stop</span><span class=\"p\">)</span> <span class=\"p\">{</span>\n                          <span class=\"n\">AFQiitaItem</span> <span class=\"o\">*</span><span class=\"n\">item</span> <span class=\"o\">=</span> <span class=\"n\">obj</span><span class=\"p\">;</span>\n                          <span class=\"n\">NSLog</span><span class=\"p\">(</span><span class=\"s\">@&quot;Post %d: %@&quot;</span><span class=\"p\">,</span> <span class=\"n\">idx</span><span class=\"p\">,</span> <span class=\"n\">item</span><span class=\"p\">.</span><span class=\"n\">title</span><span class=\"p\">);</span>\n                        <span class=\"p\">}];</span>\n                      <span class=\"p\">}</span>\n                      <span class=\"nl\">failure:</span><span class=\"o\">^</span><span class=\"p\">(</span><span class=\"n\">NSError</span> <span class=\"o\">*</span><span class=\"n\">error</span><span class=\"p\">)</span> <span class=\"p\">{</span>\n                        <span class=\"n\">NSLog</span><span class=\"p\">(</span><span class=\"s\">@&quot;Error: %@&quot;</span><span class=\"p\">,</span> <span class=\"n\">error</span><span class=\"p\">);</span>\n                      <span class=\"p\">}];</span>\n</pre>\n</div>\n</div>\n<h3>\\u65b0\\u7740\\u6295\\u7a3f\\u306e\\u53d6\\u5f97</h3>\n<div class=\"code-frame\"><div class=\"code-lang\"><span class=\"bold\"></span></div><div class=\"highlight\"><pre><span class=\"p\">[</span><span class=\"n\">client</span> <span class=\"nl\">recentItemsWithSuccess:</span><span class=\"o\">^</span><span class=\"p\">(</span><span class=\"n\">AFQiitaResponse</span> <span class=\"o\">*</span><span class=\"n\">response</span><span class=\"p\">)</span> <span class=\"p\">{</span>\n                         <span class=\"n\">NSArray</span> <span class=\"o\">*</span><span class=\"n\">items</span> <span class=\"o\">=</span> <span class=\"p\">[</span><span class=\"n\">response</span> <span class=\"n\">results</span><span class=\"p\">];</span>\n                         <span class=\"p\">[</span><span class=\"n\">items</span> <span class=\"nl\">enumerateObjectsUsingBlock:</span><span class=\"o\">^</span><span class=\"p\">(</span><span class=\"kt\">id</span> <span class=\"n\">obj</span><span class=\"p\">,</span> <span class=\"n\">NSUInteger</span> <span class=\"n\">idx</span><span class=\"p\">,</span> <span class=\"kt\">BOOL</span> <span class=\"o\">*</span><span class=\"n\">stop</span><span class=\"p\">)</span> <span class=\"p\">{</span>\n                           <span class=\"n\">AFQiitaItem</span> <span class=\"o\">*</span><span class=\"n\">item</span> <span class=\"o\">=</span> <span class=\"n\">obj</span><span class=\"p\">;</span>\n                           <span class=\"n\">NSLog</span><span class=\"p\">(</span><span class=\"s\">@&quot;Post %d: %@&quot;</span><span class=\"p\">,</span> <span class=\"n\">idx</span><span class=\"p\">,</span> <span class=\"n\">item</span><span class=\"p\">.</span><span class=\"n\">title</span><span class=\"p\">);</span>\n                         <span class=\"p\">}];</span>\n                       <span class=\"p\">}</span>\n                       <span class=\"nl\">failure:</span><span class=\"o\">^</span><span class=\"p\">(</span><span class=\"n\">NSError</span> <span class=\"o\">*</span><span class=\"n\">error</span><span class=\"p\">)</span> <span class=\"p\">{</span>\n                         <span class=\"n\">NSLog</span><span class=\"p\">(</span><span class=\"s\">@&quot;Error: %@&quot;</span><span class=\"p\">,</span> <span class=\"n\">error</span><span class=\"p\">);</span>\n                       <span class=\"p\">}];</span>\n</pre>\n</div>\n</div>\n<h3>\\u81ea\\u5206\\u306e\\u30b9\\u30c8\\u30c3\\u30af\\u3057\\u305f\\u6295\\u7a3f\\u306e\\u53d6\\u5f97</h3>\n<div class=\"code-frame\"><div class=\"code-lang\"><span class=\"bold\"></span></div><div class=\"highlight\"><pre><span class=\"p\">[</span><span class=\"n\">client</span> <span class=\"nl\">stockedItemsWithSuccess:</span><span class=\"o\">^</span><span class=\"p\">(</span><span class=\"n\">AFQiitaResponse</span> <span class=\"o\">*</span><span class=\"n\">response</span><span class=\"p\">)</span> <span class=\"p\">{</span>\n                          <span class=\"n\">NSArray</span> <span class=\"o\">*</span><span class=\"n\">items</span> <span class=\"o\">=</span> <span class=\"p\">[</span><span class=\"n\">response</span> <span class=\"n\">results</span><span class=\"p\">];</span>\n                          <span class=\"p\">[</span><span class=\"n\">items</span> <span class=\"nl\">enumerateObjectsUsingBlock:</span><span class=\"o\">^</span><span class=\"p\">(</span><span class=\"kt\">id</span> <span class=\"n\">obj</span><span class=\"p\">,</span> <span class=\"n\">NSUInteger</span> <span class=\"n\">idx</span><span class=\"p\">,</span> <span class=\"kt\">BOOL</span> <span class=\"o\">*</span><span class=\"n\">stop</span><span class=\"p\">)</span> <span class=\"p\">{</span>\n                            <span class=\"n\">AFQiitaItem</span> <span class=\"o\">*</span><span class=\"n\">item</span> <span class=\"o\">=</span> <span class=\"n\">obj</span><span class=\"p\">;</span>\n                            <span class=\"n\">NSLog</span><span class=\"p\">(</span><span class=\"s\">@&quot;Post %d: %@&quot;</span><span class=\"p\">,</span> <span class=\"n\">idx</span><span class=\"p\">,</span> <span class=\"n\">item</span><span class=\"p\">.</span><span class=\"n\">title</span><span class=\"p\">);</span>\n                          <span class=\"p\">}];</span>\n                        <span class=\"p\">}</span>\n                        <span class=\"nl\">failure:</span><span class=\"o\">^</span><span class=\"p\">(</span><span class=\"n\">NSError</span> <span class=\"o\">*</span><span class=\"n\">error</span><span class=\"p\">)</span> <span class=\"p\">{</span>\n                          <span class=\"n\">NSLog</span><span class=\"p\">(</span><span class=\"s\">@&quot;Error: %@&quot;</span><span class=\"p\">,</span> <span class=\"n\">error</span><span class=\"p\">);</span>\n                        <span class=\"p\">}];</span>\n</pre>\n</div>\n</div>\n<h3>\\u6295\\u7a3f\\u306e\\u5b9f\\u884c</h3>\n<div class=\"code-frame\"><div class=\"code-lang\"><span class=\"bold\"></span></div><div class=\"highlight\"><pre><span class=\"n\">AFQiitaItem</span> <span class=\"o\">*</span><span class=\"n\">item</span> <span class=\"o\">=</span> <span class=\"p\">[[</span><span class=\"n\">AFQiitaItem</span> <span class=\"n\">alloc</span><span class=\"p\">]</span>\n                      <span class=\"nl\">initWithTitle:</span><span class=\"s\">@&quot;\\u30c6\\u30b9\\u30c8\\uff01&quot;</span>\n                      <span class=\"nl\">body:</span><span class=\"s\">@&quot;[AFQiitaClient](http://github.com/ngs/AFQiitaClient) \\u304b\\u3089\\u6295\\u7a3f\\u30c6\\u30b9\\u30c8&quot;</span><span class=\"p\">];</span>\n\n<span class=\"p\">[</span><span class=\"n\">item</span> <span class=\"nl\">addTag:</span><span class=\"p\">[</span><span class=\"n\">AFQiitaTag</span> <span class=\"nl\">tagWithName:</span><span class=\"s\">@&quot;iOS&quot;</span>\n                            <span class=\"nl\">versions:</span><span class=\"s\">@&quot;5.1.1&quot;</span><span class=\"p\">,</span> <span class=\"s\">@&quot;6.0&quot;</span><span class=\"p\">,</span> <span class=\"nb\">nil</span><span class=\"p\">]];</span>\n\n<span class=\"p\">[</span><span class=\"n\">item</span> <span class=\"nl\">setTweet:</span><span class=\"n\">YES</span><span class=\"p\">];</span> <span class=\"c1\">// Posts URL to Twitter</span>\n<span class=\"p\">[</span><span class=\"n\">item</span> <span class=\"nl\">setGist:</span><span class=\"n\">YES</span><span class=\"p\">];</span>  <span class=\"c1\">// Share code blocks on Gist</span>\n\n<span class=\"p\">[</span><span class=\"n\">client</span> <span class=\"nl\">createItem:</span><span class=\"n\">item</span>\n           <span class=\"nl\">success:success:</span><span class=\"o\">^</span><span class=\"p\">(</span><span class=\"n\">AFQiitaResponse</span> <span class=\"o\">*</span><span class=\"n\">response</span><span class=\"p\">)</span> <span class=\"p\">{</span>\n             <span class=\"n\">AFQiitaItem</span> <span class=\"o\">*</span><span class=\"n\">createdItem</span> <span class=\"o\">=</span> <span class=\"p\">[</span><span class=\"n\">response</span> <span class=\"n\">first</span><span class=\"p\">];</span>\n             <span class=\"n\">NSLog</span><span class=\"p\">(</span><span class=\"s\">@&quot;Success! UUID is %@&quot;</span><span class=\"p\">,</span> <span class=\"n\">createdItem</span><span class=\"p\">.</span><span class=\"n\">uuid</span><span class=\"p\">);</span>\n           <span class=\"p\">}</span>\n           <span class=\"nl\">failure:</span><span class=\"o\">^</span><span class=\"p\">(</span><span class=\"n\">NSError</span> <span class=\"o\">*</span><span class=\"n\">error</span><span class=\"p\">)</span> <span class=\"p\">{</span>\n             <span class=\"n\">NSLog</span><span class=\"p\">(</span><span class=\"s\">@&quot;Error: %@&quot;</span><span class=\"p\">,</span> <span class=\"n\">error</span><span class=\"p\">);</span>\n           <span class=\"p\">}];</span>\n</pre>\n</div>\n</div>\n<h3>\\u6295\\u7a3f\\u306e\\u66f4\\u65b0</h3>\n<div class=\"code-frame\"><div class=\"code-lang\"><span class=\"bold\"></span></div><div class=\"highlight\"><pre><span class=\"n\">AFQiitaItem</span> <span class=\"o\">*</span><span class=\"n\">item</span> <span class=\"o\">=</span> <span class=\"p\">...;</span> <span class=\"c1\">// Received from API</span>\n\n<span class=\"p\">[</span><span class=\"n\">item</span> <span class=\"nl\">setTitle:</span><span class=\"s\">@&quot;\\u30c6\\u30b9\\u30c8\\uff01(\\u8ffd\\u8a18\\u30a2\\u30ea)&quot;</span><span class=\"p\">];</span>\n<span class=\"p\">[</span><span class=\"n\">item</span> <span class=\"nl\">setBody:</span><span class=\"s\">@&quot;[AFQiitaClient](http://github.com/ngs/AFQiitaClient) \\u304b\\u3089\\u6295\\u7a3f\\u30c6\\u30b9\\u30c8</span><span class=\"se\">\n\n</span><span class=\"s\">##\\u8ffd\\u8a18 (2012/10/13)</span><span class=\"se\">\n\n</span><span class=\"s\">* \\u975e\\u516c\\u958b\\u306b\\u3057\\u3066\\u307f\\u305f&quot;</span><span class=\"p\">];</span>\n\n<span class=\"p\">[</span><span class=\"n\">item</span> <span class=\"nl\">removeTag:</span><span class=\"p\">[</span><span class=\"n\">item</span><span class=\"p\">.</span><span class=\"n\">tags</span> <span class=\"nl\">objectAtIndex:</span><span class=\"mi\">2</span><span class=\"p\">]];</span>\n<span class=\"p\">[</span><span class=\"n\">item</span> <span class=\"nl\">addTag:</span><span class=\"p\">[</span><span class=\"n\">AFQiitaTag</span> <span class=\"nl\">tagWithName:</span><span class=\"s\">@&quot;Rails&quot;</span><span class=\"p\">]];</span>\n\n<span class=\"p\">[</span><span class=\"n\">item</span> <span class=\"n\">publicize</span><span class=\"p\">];</span> <span class=\"c1\">// \\u9650\\u5b9a\\u516c\\u958b\\u306e\\u3082\\u306e\\u3092 public \\u306b\\u5909\\u66f4\\u306e\\u307f\\u53ef\\u80fd</span>\n\n<span class=\"p\">[</span><span class=\"n\">client</span> <span class=\"nl\">updateItem:</span><span class=\"n\">item</span>\n           <span class=\"nl\">success:success:</span><span class=\"o\">^</span><span class=\"p\">(</span><span class=\"n\">AFQiitaResponse</span> <span class=\"o\">*</span><span class=\"n\">response</span><span class=\"p\">)</span> <span class=\"p\">{</span>\n             <span class=\"n\">AFQiitaItem</span> <span class=\"o\">*</span><span class=\"n\">updatedItem</span> <span class=\"o\">=</span> <span class=\"p\">[</span><span class=\"n\">response</span> <span class=\"n\">first</span><span class=\"p\">];</span>\n             <span class=\"n\">NSLog</span><span class=\"p\">(</span><span class=\"s\">@&quot;Success! Updated at %@&quot;</span><span class=\"p\">,</span> <span class=\"n\">updatedItem</span><span class=\"p\">.</span><span class=\"n\">updatedAt</span><span class=\"p\">);</span>\n           <span class=\"p\">}</span>\n           <span class=\"nl\">failure:</span><span class=\"o\">^</span><span class=\"p\">(</span><span class=\"n\">NSError</span> <span class=\"o\">*</span><span class=\"n\">error</span><span class=\"p\">)</span> <span class=\"p\">{</span>\n             <span class=\"n\">NSLog</span><span class=\"p\">(</span><span class=\"s\">@&quot;Error: %@&quot;</span><span class=\"p\">,</span> <span class=\"n\">error</span><span class=\"p\">);</span>\n           <span class=\"p\">}];</span>\n</pre>\n</div>\n</div>\n<h3>\\u6295\\u7a3f\\u306e\\u524a\\u9664</h3>\n<div class=\"code-frame\"><div class=\"code-lang\"><span class=\"bold\"></span></div><div class=\"highlight\"><pre><span class=\"p\">[</span><span class=\"n\">client</span> <span class=\"nl\">deleteItem:</span><span class=\"n\">item</span> <span class=\"c1\">// Alias for deleteItemWithUUID:(NSString *)uuid</span>\n           <span class=\"nl\">success:success:</span><span class=\"o\">^</span> <span class=\"p\">{</span>\n             <span class=\"n\">NSLog</span><span class=\"p\">(</span><span class=\"s\">@&quot;Successfully deleted&quot;</span><span class=\"p\">);</span>\n           <span class=\"p\">}</span>\n           <span class=\"nl\">failure:</span><span class=\"o\">^</span><span class=\"p\">(</span><span class=\"n\">NSError</span> <span class=\"o\">*</span><span class=\"n\">error</span><span class=\"p\">)</span> <span class=\"p\">{</span>\n             <span class=\"n\">NSLog</span><span class=\"p\">(</span><span class=\"s\">@&quot;Error: %@&quot;</span><span class=\"p\">,</span> <span class=\"n\">error</span><span class=\"p\">);</span>\n           <span class=\"p\">}];</span>\n</pre>\n</div>\n</div>\n<h3>\\u7279\\u5b9a\\u306e\\u6295\\u7a3f\\u53d6\\u5f97</h3>\n<div class=\"code-frame\"><div class=\"code-lang\"><span class=\"bold\"></span></div><div class=\"highlight\"><pre><span class=\"p\">[</span><span class=\"n\">client</span> <span class=\"nl\">itemWithUUID:</span><span class=\"s\">@&quot;1a43e55e7209c8f3c565&quot;</span>\n             <span class=\"nl\">success:success:</span><span class=\"o\">^</span> <span class=\"p\">{</span>\n             <span class=\"n\">AFQiitaItem</span> <span class=\"o\">*</span><span class=\"n\">item</span> <span class=\"o\">=</span> <span class=\"p\">[</span><span class=\"n\">response</span> <span class=\"n\">first</span><span class=\"p\">];</span>\n               <span class=\"n\">NSLog</span><span class=\"p\">(</span><span class=\"s\">@&quot;Success: Title is %@, posted by %@ at %@&quot;</span><span class=\"p\">,</span>\n                 <span class=\"n\">item</span><span class=\"p\">.</span><span class=\"n\">title</span><span class=\"p\">,</span> <span class=\"n\">item</span><span class=\"p\">.</span><span class=\"n\">user</span><span class=\"p\">.</span><span class=\"n\">name</span><span class=\"p\">,</span> <span class=\"n\">item</span><span class=\"p\">.</span><span class=\"n\">createdAt</span><span class=\"p\">);</span>\n             <span class=\"p\">}</span>\n             <span class=\"nl\">failure:</span><span class=\"o\">^</span><span class=\"p\">(</span><span class=\"n\">NSError</span> <span class=\"o\">*</span><span class=\"n\">error</span><span class=\"p\">)</span> <span class=\"p\">{</span>\n               <span class=\"n\">NSLog</span><span class=\"p\">(</span><span class=\"s\">@&quot;Error: %@&quot;</span><span class=\"p\">,</span> <span class=\"n\">error</span><span class=\"p\">);</span>\n             <span class=\"p\">}];</span>\n</pre>\n</div>\n</div>\n<h3>\\u6295\\u7a3f\\u306e\\u30b9\\u30c8\\u30c3\\u30af</h3>\n<div class=\"code-frame\"><div class=\"code-lang\"><span class=\"bold\"></span></div><div class=\"highlight\"><pre><span class=\"p\">[</span><span class=\"n\">client</span> <span class=\"nl\">stockItem:</span><span class=\"n\">item</span> <span class=\"c1\">// Alias for stockItemWithUUID:(NSString *)uuid</span>\n          <span class=\"nl\">success:success:</span><span class=\"o\">^</span> <span class=\"p\">{</span>\n            <span class=\"n\">NSLog</span><span class=\"p\">(</span><span class=\"s\">@&quot;Successfully stocked&quot;</span><span class=\"p\">);</span>\n          <span class=\"p\">}</span>\n          <span class=\"nl\">failure:</span><span class=\"o\">^</span><span class=\"p\">(</span><span class=\"n\">NSError</span> <span class=\"o\">*</span><span class=\"n\">error</span><span class=\"p\">)</span> <span class=\"p\">{</span>\n            <span class=\"n\">NSLog</span><span class=\"p\">(</span><span class=\"s\">@&quot;Error: %@&quot;</span><span class=\"p\">,</span> <span class=\"n\">error</span><span class=\"p\">);</span>\n          <span class=\"p\">}];</span>\n</pre>\n</div>\n</div>\n<h3>\\u6295\\u7a3f\\u306e\\u30b9\\u30c8\\u30c3\\u30af\\u89e3\\u9664</h3>\n<div class=\"code-frame\"><div class=\"code-lang\"><span class=\"bold\"></span></div><div class=\"highlight\"><pre><span class=\"p\">[</span><span class=\"n\">client</span> <span class=\"nl\">unstockItem:</span><span class=\"n\">item</span> <span class=\"c1\">// Alias for unstockItemWithUUID:(NSString *)uuid</span>\n            <span class=\"nl\">success:success:</span><span class=\"o\">^</span> <span class=\"p\">{</span>\n              <span class=\"n\">NSLog</span><span class=\"p\">(</span><span class=\"s\">@&quot;Successfully unstocked&quot;</span><span class=\"p\">);</span>\n            <span class=\"p\">}</span>\n            <span class=\"nl\">failure:</span><span class=\"o\">^</span><span class=\"p\">(</span><span class=\"n\">NSError</span> <span class=\"o\">*</span><span class=\"n\">error</span><span class=\"p\">)</span> <span class=\"p\">{</span>\n              <span class=\"n\">NSLog</span><span class=\"p\">(</span><span class=\"s\">@&quot;Error: %@&quot;</span><span class=\"p\">,</span> <span class=\"n\">error</span><span class=\"p\">);</span>\n            <span class=\"p\">}];</span>\n</pre>\n</div>\n</div>",
+    "created_at": "2012-10-13 04:09:33 +0900",
+    "updated_at": "2012-10-13 04:21:36 +0900",
+    "created_at_in_words": "9\\u6642\\u9593\\u524d",
+    "updated_at_in_words": "9\\u6642\\u9593\\u524d",
+    "tags": [
+      {
+        "name": "Objective-C",
+        "url_name": "Objective-C",
+        "icon_url": "http://qiita.com/system/tags/icons/000/000/012/thumb/objc.png?1316167122",
+        "item_count": 283,
+        "follower_count": 1982,
+        "versions": []
+      },
+      {
+        "name": "cocoa",
+        "url_name": "cocoa",
+        "icon_url": "http://qiita.com/icons/thumb/missing.png",
+        "item_count": 5,
+        "follower_count": 4,
+        "versions": []
+      },
+      {
+        "name": "Qiita",
+        "url_name": "Qiita",
+        "icon_url": "http://qiita.com/system/tags/icons/000/000/001/thumb/favicon.png?1320171109",
+        "item_count": 165,
+        "follower_count": 1955,
+        "versions": []
+      },
+      {
+        "name": "QiitaAPI",
+        "url_name": "QiitaAPI",
+        "icon_url": "http://qiita.com/icons/thumb/missing.png",
+        "item_count": 2,
+        "follower_count": 0,
+        "versions": []
+      }
+    ],
+    "stock_count": 1,
+    "stock_users": [
+      "usamik26"
+    ],
+    "comment_count": 0,
+    "url": "http://qiita.com/items/a7efac2217d7b63226cb",
+    "gist_url": null,
+    "private": false,
+    "created_at_as_seconds": 1350068973
+  },
+  {
+    "id": 9865,
+    "uuid": "88e33037017f094e288e",
+    "user": {
+      "name": "\\u5b89\\u5c3e\\u53cb\\u4f51",
+      "url_name": "yusuke_yasuo",
+      "profile_image_url": "https://si0.twimg.com/profile_images/1112207070/__________2010-08-28_9.47.21__normal.png"
+    },
+    "title": "Qiita API\\u516c\\u958b",
+    "body": "<p><a href=\"http://qiita.com/docs\">http://qiita.com/docs</a></p>\n\n<p>\\u660e\\u65e5\\u306fHackathon\\u3060\\uff01</p>\n",
+    "created_at": "2012-10-13 01:59:10 +0900",
+    "updated_at": "2012-10-13 01:59:10 +0900",
+    "created_at_in_words": "12\\u6642\\u9593\\u524d",
+    "updated_at_in_words": "12\\u6642\\u9593\\u524d",
+    "tags": [
+      {
+        "name": "iPhone",
+        "url_name": "iPhone",
+        "icon_url": "http://qiita.com/system/tags/icons/000/000/019/thumb/k1014925770.jpeg?1316130246",
+        "item_count": 157,
+        "follower_count": 2662,
+        "versions": []
+      },
+      {
+        "name": "PHP",
+        "url_name": "PHP",
+        "icon_url": "http://qiita.com/system/tags/icons/000/000/006/thumb/PHP.png?1338128905",
+        "item_count": 454,
+        "follower_count": 2515,
+        "versions": []
+      }
+    ],
+    "stock_count": 2,
+    "stock_users": [
+      "eslar",
+      "okeyProg@github"
+    ],
+    "comment_count": 0,
+    "url": "http://qiita.com/items/88e33037017f094e288e",
+    "gist_url": null,
+    "private": false,
+    "created_at_as_seconds": 1350061150
+  },
+  {
+    "id": 9856,
+    "uuid": "76d72d517fe048677a76",
+    "user": {
+      "name": "daisy1754",
+      "url_name": "abc_part",
+      "profile_image_url": "https://secure.gravatar.com/avatar/6e2e7273fadc33c1c017e5c02d9be8f1?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png"
+    },
+    "title": "$.ajax\\u306e\\u623b\\u308a\\u5024\\u306b\\u307e\\u3064\\u308f\\u308b\\u6df7\\u4e71(\\u672a\\u89e3\\u6c7a)",
+    "body": "<p>jQuery1.5\\u4ee5\\u964d\\u3067\\u306fDeffered\\u30aa\\u30d6\\u30b8\\u30a7\\u30af\\u30c8\\u3068\\u3044\\u3046\\u3082\\u306e\\u304c\\u5c0e\\u5165\\u3055\\u308c\\u3066\\uff0c\\u975e\\u540c\\u671f\\u901a\\u4fe1\\u306b\\u5bfe\\u3059\\u308b\\u30b3\\u30fc\\u30eb\\u30d0\\u30c3\\u30af\\u306a\\u3069\\u3092\\u3059\\u3063\\u304d\\u308a\\u66f8\\u3051\\u308b\\u3088\\u3046\\u306b\\u306a\\u3063\\u305f\\uff0c\\u3089\\u3057\\u3044\\u3067\\u3059\\uff0e<br>\n\\u53c2\\u8003: <a href=\"http://qiita.com/items/f3269bf91b192bc49395\">http://qiita.com/items/f3269bf91b192bc49395</a></p>\n\n<p>\\u65e9\\u901f\\u4f7f\\u3063\\u3066\\u307f\\u3088\\u3046\\u3068\\u3057\\u305f\\u3068\\u3053\\u308d\\uff0c\\u306f\\u307e\\u3063\\u3066\\u3057\\u307e\\u3044\\u307e\\u3057\\u305f\\uff0e</p>\n\n<h4>\\u51fa\\u6765\\u305d\\u3046\\uff0c\\u8d77\\u3053\\u308a\\u305d\\u3046\\u3060\\u3068\\u601d\\u3063\\u3066\\u3044\\u308b\\u3053\\u3068</h4>\n\n<p><a href=\"http://api.jquery.com/jQuery.ajax\">$.ajax\\u306e\\u30c9\\u30ad\\u30e5\\u30e1\\u30f3\\u30c8</a>\\u306b\\u306f\\uff0c$.ajax\\u306f<a href=\"http://api.jquery.com/jQuery.ajax/#jqXHR\">jqXHR(jQuery XMLHttpRequest</a>\\u3092\\u8fd4\\u3059\\u3068\\u3042\\u308b\\uff0e<br>\n\\u307e\\u305f\\uff0c</p>\n\n<blockquote>\n<p>The jqXHR objects returned by $.ajax() as of jQuery 1.5 implement the Promise interface, giving them all the properties, methods, and behavior of a Promise (see Deferred object for more information).</p>\n</blockquote>\n\n<p>jqXHR\\u30aa\\u30d6\\u30b8\\u30a7\\u30af\\u30c8\\u306f<a href=\"http://api.jquery.com/Types/#Promise\">Promise</a>\\u30a4\\u30f3\\u30bf\\u30d5\\u30a7\\u30fc\\u30b9\\u3092\\u5b9f\\u88c5\\u3057\\u3066\\u3044\\u308b\\u3089\\u3057\\u3044\\uff0e</p>\n\n<p>\\u30c9\\u30ad\\u30e5\\u30e1\\u30f3\\u30c8\\u306b\\u3088\\u308b\\u3068</p>\n\n<blockquote>\n<p>This object provides a subset of the methods of the Deferred object (then, done, fail, always, pipe. isResolved, and isRejected) to prevent users from changing the state of the Deferred.</p>\n</blockquote>\n\n<p>Promise\\u306fDeferred\\u306e\\u30b5\\u30d6\\u30bb\\u30c3\\u30c8\\u3067\\u3042\\u308a\\uff0cdone\\u3084pipe\\u306a\\u3069\\u306e\\u30e1\\u30bd\\u30c3\\u30c9\\u3092\\u6301\\u3064\\uff0e<br>\n\\u5f93\\u3063\\u3066\\uff0c$.ajax({url:&#39;hoge&#39;}).done(callback);\\u306e\\u3088\\u3046\\u306a\\u4f7f\\u3044\\u65b9\\u304c\\u51fa\\u6765\\u308b\\u306f\\u305a\\u3067\\u3042\\u308b\\uff0c\\u3068\\u601d\\u3046\\uff0e</p>\n\n<h4>\\u5b9f\\u969b\\u306b\\u8d77\\u304d\\u305f\\u3053\\u3068</h4>\n\n<p>Qiita\\u306e\\u4e0a\\u3067Chrome\\u306e\\u30b3\\u30f3\\u30bd\\u30fc\\u30eb\\u3092\\u958b\\u304d\\uff0cjQuery(1.7.2\\u306e\\u3088\\u3046\\u3060)\\u3068\\u622f\\u308c\\u305f\\u7d50\\u679c\\uff0c\\u4ee5\\u4e0b\\u306e\\u69d8\\u306b$.ajax\\u306fjqXHR\\u30aa\\u30d6\\u30b8\\u30a7\\u30af\\u30c8\\u3067\\u306f\\u306a\\u304f\\uff0cDefferd\\u30aa\\u30d6\\u30b8\\u30a7\\u30af\\u30c8\\u3092\\u8fd4\\u3057\\u305f\\uff0e\\u307e\\u305f\\uff0c\\u623b\\u3063\\u3066\\u304d\\u305f\\u30aa\\u30d6\\u30b8\\u30a7\\u30af\\u30c8\\u306f\\uff0cdone\\u306a\\u3069\\u306e\\u30e1\\u30bd\\u30c3\\u30c9\\u3092\\u6301\\u305f\\u306a\\u3044\\uff0e\\uff0e\\uff0e\\u3069\\u3046\\u3044\\u3046\\u3053\\u3068\\u306a\\u306e\\uff0e\\uff0e</p>\n<div class=\"code-frame\"><div class=\"highlight\"><pre>$.ajax({url:&quot;http://qiita.com&quot;}) // $.ajax\\u306e\\u623b\\u308a\\u5024\\u306fDeffered\\u578b\\uff1f\nDeferred\n_next: null\ncallback: Object\n__proto__: Object\n_fire: function (a,b){var c=&quot;ok&quot;;try{b=this.callback[a].call(this,b)}catch(d){c=&quot;ng&quot;,b=d,Deferred.onerror&amp;&amp;Deferred.onerror(d)}return Deferred.isDeferred(b)?b._next=this._next:this._next&amp;&amp;this._next._fire(c,b),this}\n_id: 250149748310446\n_post: function (a,b){return this._next=new Deferred,this._next.callback[a]=b,this._next}\ncall: function (a){return this._fire(&quot;ok&quot;,a)}\ncancel: function (){return(this.canceller||function(){})(),this.init()}\nerror: function (a){return this._post(&quot;ng&quot;,a)}\nfail: function (a){return this._fire(&quot;ng&quot;,a)}\ninit: function (){return this._next=null,this.callback={ok:Deferred.ok,ng:Deferred.ng},this}\nloop: function (){var a=arguments;return this.next(function(){return b.apply(this,a)})}\nnext: function (a){return this._post(&quot;ok&quot;,a)}\nwait: function (){var a=arguments;return this.next(function(){return b.apply(this,a)})}\n__proto__: Object\n__defineGetter__: function __defineGetter__() { [native code] }\n__defineSetter__: function __defineSetter__() { [native code] }\n__lookupGetter__: function __lookupGetter__() { [native code] }\n__lookupSetter__: function __lookupSetter__() { [native code] }\nconstructor: function Object() { [native code] }\nhasOwnProperty: function hasOwnProperty() { [native code] }\nisPrototypeOf: function isPrototypeOf() { [native code] }\npropertyIsEnumerable: function propertyIsEnumerable() { [native code] }\ntoLocaleString: function toLocaleString() { [native code] }\ntoString: function toString() { [native code] }\nvalueOf: function valueOf() { [native code] }\n</pre>\n</div>\n</div><div class=\"code-frame\"><div class=\"highlight\"><pre>$.Deferred() // \\u4e0a\\u3067\\u898b\\u305fDeffered\\u578b\\u3089\\u3057\\u304d\\u3082\\u306e\\u3068\\u306f\\uff0c\\u6301\\u3064\\u30e1\\u30bd\\u30c3\\u30c9\\u304c\\u7570\\u306a\\u308b?\nObject\nalways: function (){return i.done.apply(i,arguments).fail.apply(i,arguments),this}\ndone: function (){if(c){var a=c.length;n(arguments),j?l=c.length:e&amp;&amp;e!==!0&amp;&amp;(k=a,o(e[0],e[1]))}return this}\nfail: function (){if(c){var a=c.length;n(arguments),j?l=c.length:e&amp;&amp;e!==!0&amp;&amp;(k=a,o(e[0],e[1]))}return this}\nisRejected: function (){return!!i}\nisResolved: function (){return!!i}\nnotify: function (){return p.fireWith(this,arguments),this}\nnotifyWith: function (b,c){return d&amp;&amp;(j?a.once||d.push([b,c]):(!a.once||!e)&amp;&amp;o(b,c)),this}\npipe: function (a,b,c){return f.Deferred(function(d){f.each({done:[a,&quot;resolve&quot;],fail:[b,&quot;reject&quot;],progress:[c,&quot;notify&quot;]},function(a,b){var c=b[0],e=b[1],g;f.isFunction(c)?i[a](function(){g=c.apply(this,arguments),g&amp;&amp;f.isFunction(g.promise)?g.promise().then(d.resolve,d.reject,d.notify):d[e+&quot;With&quot;](this===i?d:this,[g])}):i[a](d[e])})}).promise()}\nprogress: function (){if(c){var a=c.length;n(arguments),j?l=c.length:e&amp;&amp;e!==!0&amp;&amp;(k=a,o(e[0],e[1]))}return this}\npromise: function (a){if(a==null)a=h;else for(var b in h)a[b]=h[b];return a}\nreject: function (){return p.fireWith(this,arguments),this}\nrejectWith: function (b,c){return d&amp;&amp;(j?a.once||d.push([b,c]):(!a.once||!e)&amp;&amp;o(b,c)),this}\nresolve: function (){return p.fireWith(this,arguments),this}\nresolveWith: function (b,c){return d&amp;&amp;(j?a.once||d.push([b,c]):(!a.once||!e)&amp;&amp;o(b,c)),this}\nstate: function (){return e}\nthen: function (a,b,c){return i.done(a).fail(b).progress(c),this}\n__proto__: Object\n__defineGetter__: function __defineGetter__() { [native code] }\n__defineSetter__: function __defineSetter__() { [native code] }\n__lookupGetter__: function __lookupGetter__() { [native code] }\n__lookupSetter__: function __lookupSetter__() { [native code] }\nconstructor: function Object() { [native code] }\nhasOwnProperty: function hasOwnProperty() { [native code] }\nisPrototypeOf: function isPrototypeOf() { [native code] }\npropertyIsEnumerable: function propertyIsEnumerable() { [native code] }\ntoLocaleString: function toLocaleString() { [native code] }\ntoString: function toString() { [native code] }\nvalueOf: function valueOf() { [native code] }\n</pre>\n</div>\n</div>",
+    "created_at": "2012-10-13 00:28:52 +0900",
+    "updated_at": "2012-10-13 00:28:52 +0900",
+    "created_at_in_words": "13\\u6642\\u9593\\u524d",
+    "updated_at_in_words": "13\\u6642\\u9593\\u524d",
+    "tags": [
+      {
+        "name": "jQuery",
+        "url_name": "jQuery",
+        "icon_url": "http://qiita.com/system/tags/icons/000/000/127/thumb/imgres.jpeg?1328014679",
+        "item_count": 90,
+        "follower_count": 547,
+        "versions": []
+      },
+      {
+        "name": "JavaScript",
+        "url_name": "JavaScript",
+        "icon_url": "http://qiita.com/system/tags/icons/000/000/015/thumb/images.jpeg?1316130454",
+        "item_count": 577,
+        "follower_count": 4187,
+        "versions": []
+      }
+    ],
+    "stock_count": 0,
+    "stock_users": [],
+    "comment_count": 1,
+    "url": "http://qiita.com/items/76d72d517fe048677a76",
+    "gist_url": null,
+    "private": false,
+    "created_at_as_seconds": 1350055732
+  },
+  {
+    "id": 9854,
+    "uuid": "ec3176445c10105792c5",
+    "user": {
+      "name": "itoz",
+      "url_name": "itoz",
+      "profile_image_url": "https://secure.gravatar.com/avatar/e88b2f6aa0efb0248229f0f89c16faad?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png"
+    },
+    "title": "\\u97f3\\u58f0\\u8a8d\\u8b58 Julius \\u306e\\u300c\\u8a8d\\u8b58\\u7d50\\u679c\\u300d\\u30b9\\u30c8\\u30ea\\u30f3\\u30b0\\u3092\\u5358\\u8a9e\\u914d\\u5217\\u306b",
+    "body": "<div class=\"code-frame\"><div class=\"code-lang\"><span class=\"bold\"></span></div><div class=\"highlight\"><pre><span class=\"cm\">/**</span>\n<span class=\"cm\">*  Julius\\u306e\\u300c\\u8a8d\\u8b58\\u7d50\\u679c\\u300d\\u30b9\\u30c8\\u30ea\\u30f3\\u30b0\\u3092\\u5358\\u8a9e\\u914d\\u5217\\u306b\\u3059\\u308b</span>\n<span class=\"cm\">* @see http://julius.sourceforge.jp/index.php?q=doc/module.html</span>\n<span class=\"cm\">*/</span>\n<span class=\"kd\">private</span> <span class=\"kd\">function</span> <span class=\"nx\">juliusParser</span><span class=\"p\">(</span><span class=\"nx\">str</span> <span class=\"o\">:</span> <span class=\"nb\">String</span><span class=\"p\">)</span> <span class=\"o\">:</span> <span class=\"nb\">Array</span>\n<span class=\"p\">{</span>\n        <span class=\"k\">var</span> <span class=\"nx\">startindex</span> <span class=\"o\">:</span> <span class=\"nb\">int</span> <span class=\"o\">=</span> <span class=\"nx\">str</span><span class=\"p\">.</span><span class=\"nx\">indexOf</span><span class=\"p\">(</span><span class=\"s2\">&quot;&lt;RECOGOUT&gt;&quot;</span><span class=\"p\">);</span>\n        <span class=\"k\">if</span><span class=\"p\">(</span><span class=\"nx\">startindex</span><span class=\"o\">==</span> <span class=\"o\">-</span><span class=\"mi\">1</span><span class=\"p\">)</span> <span class=\"k\">return</span> <span class=\"kc\">null</span><span class=\"o\">;</span>\n        <span class=\"k\">var</span> <span class=\"nx\">lastindex</span> <span class=\"o\">:</span> <span class=\"nb\">int</span> <span class=\"o\">=</span> <span class=\"nx\">str</span><span class=\"p\">.</span><span class=\"nx\">indexOf</span><span class=\"p\">(</span><span class=\"s2\">&quot;&lt;/RECOGOUT&gt;&quot;</span><span class=\"p\">);</span>\n        <span class=\"k\">if</span> <span class=\"p\">(</span><span class=\"nx\">lastindex</span> <span class=\"o\">!=</span> <span class=\"o\">-</span><span class=\"mi\">1</span><span class=\"p\">)</span> <span class=\"p\">{</span>\n            <span class=\"nx\">str</span> <span class=\"o\">=</span> <span class=\"nx\">str</span><span class=\"p\">.</span><span class=\"nx\">slice</span><span class=\"p\">(</span><span class=\"nx\">startindex</span><span class=\"o\">,</span> <span class=\"nx\">lastindex</span> <span class=\"o\">+</span> <span class=\"mi\">11</span><span class=\"p\">);</span>\n            <span class=\"nx\">str</span> <span class=\"o\">=</span> <span class=\"nx\">str</span><span class=\"p\">.</span><span class=\"nx\">replace</span><span class=\"p\">(</span><span class=\"sr\">/&lt;s&gt;/</span><span class=\"o\">,</span> <span class=\"s1\">&#39;&#39;</span><span class=\"p\">);</span>\n            <span class=\"nx\">str</span> <span class=\"o\">=</span> <span class=\"nx\">str</span><span class=\"p\">.</span><span class=\"nx\">replace</span><span class=\"p\">(</span><span class=\"sr\">/&lt;\\/s&gt;/</span><span class=\"o\">,</span> <span class=\"s1\">&#39;&#39;</span><span class=\"p\">);</span>\n            <span class=\"k\">var</span> <span class=\"nx\">xml</span> <span class=\"o\">:</span> <span class=\"nb\">XML</span> <span class=\"o\">=</span> <span class=\"k\">new</span> <span class=\"nb\">XML</span><span class=\"p\">(</span><span class=\"nx\">str</span><span class=\"p\">);</span>\n            <span class=\"k\">var</span> <span class=\"nx\">wordLines</span> <span class=\"o\">:</span> <span class=\"nb\">XMLList</span> <span class=\"o\">=</span> <span class=\"nx\">xml</span><span class=\"p\">.</span><span class=\"nx\">children</span><span class=\"p\">().</span><span class=\"nx\">WHYPO</span><span class=\"p\">.(</span><span class=\"err\">@</span><span class=\"nx\">CLASSID</span> <span class=\"o\">!=</span> <span class=\"s2\">&quot;&quot;</span><span class=\"p\">);</span>\n            <span class=\"k\">var</span> <span class=\"nx\">wordLineNum</span> <span class=\"o\">:</span> <span class=\"nb\">int</span> <span class=\"o\">=</span> <span class=\"nx\">wordLines</span><span class=\"p\">.</span><span class=\"nx\">length</span><span class=\"p\">();</span>\n            <span class=\"k\">var</span> <span class=\"nx\">words</span> <span class=\"o\">:</span> <span class=\"nb\">Array</span> <span class=\"o\">=</span> <span class=\"p\">[];</span>\n            <span class=\"k\">for</span> <span class=\"p\">(</span><span class=\"k\">var</span> <span class=\"nx\">i</span> <span class=\"o\">:</span> <span class=\"nb\">int</span> <span class=\"o\">=</span> <span class=\"mi\">0</span><span class=\"o\">;</span> <span class=\"nx\">i</span> <span class=\"o\">&lt;</span> <span class=\"nx\">wordLineNum</span><span class=\"o\">;</span> <span class=\"nx\">i</span><span class=\"o\">++</span><span class=\"p\">)</span> <span class=\"p\">{</span>\n                <span class=\"k\">var</span> <span class=\"nx\">word</span> <span class=\"o\">:</span> <span class=\"nb\">String</span> <span class=\"o\">=</span> <span class=\"nx\">wordLines</span><span class=\"p\">[</span><span class=\"nx\">i</span><span class=\"p\">].</span><span class=\"err\">@</span><span class=\"nx\">WORD</span><span class=\"o\">;</span>\n                <span class=\"nx\">words</span><span class=\"p\">.</span><span class=\"nx\">push</span><span class=\"p\">(</span><span class=\"nx\">word</span><span class=\"p\">);</span>\n            <span class=\"p\">}</span>\n            <span class=\"k\">return</span> <span class=\"nx\">words</span><span class=\"o\">;</span>\n        <span class=\"p\">}</span>\n        <span class=\"k\">return</span> <span class=\"kc\">null</span><span class=\"o\">;</span>\n<span class=\"p\">}</span>\n</pre>\n</div>\n</div>",
+    "created_at": "2012-10-13 00:03:38 +0900",
+    "updated_at": "2012-10-13 00:13:06 +0900",
+    "created_at_in_words": "13\\u6642\\u9593\\u524d",
+    "updated_at_in_words": "13\\u6642\\u9593\\u524d",
+    "tags": [
+      {
+        "name": "ActionScript",
+        "url_name": "ActionScript",
+        "icon_url": "http://qiita.com/system/tags/icons/000/000/021/thumb/as.png?1333199076",
+        "item_count": 59,
+        "follower_count": 129,
+        "versions": [
+          "3"
+        ]
+      },
+      {
+        "name": "Julius",
+        "url_name": "Julius",
+        "icon_url": "http://qiita.com/icons/thumb/missing.png",
+        "item_count": 1,
+        "follower_count": 0,
+        "versions": []
+      },
+      {
+        "name": "\\u97f3\\u58f0\\u89e3\\u6790",
+        "url_name": "%E9%9F%B3%E5%A3%B0%E8%A7%A3%E6%9E%90",
+        "icon_url": "http://qiita.com/icons/thumb/missing.png",
+        "item_count": 1,
+        "follower_count": 0,
+        "versions": []
+      }
+    ],
+    "stock_count": 0,
+    "stock_users": [],
+    "comment_count": 0,
+    "url": "http://qiita.com/items/ec3176445c10105792c5",
+    "gist_url": null,
+    "private": false,
+    "created_at_as_seconds": 1350054218
+  },
+  {
+    "id": 9853,
+    "uuid": "3afb4f1245ec61cae8e0",
+    "user": {
+      "name": "suin",
+      "url_name": "suin",
+      "profile_image_url": "https://secure.gravatar.com/avatar/152ead2a935d1c21b585286d7587b183?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png"
+    },
+    "title": "UNIX\\u30bf\\u30a4\\u30e0\\u30b9\\u30bf\\u30f3\\u30d7\\u3068\\u65e5\\u6642\\u304c\\u30ad\\u30ea\\u306e\\u3044\\u3044\\u30e4\\u30c47\\u9078",
+    "body": "<p>\\u65e5\\u4ed8\\u5468\\u308a\\u3067\\u30c6\\u30b9\\u30c8\\u3092\\u3059\\u308b\\u3068\\u304d\\u306b\\u4f7f\\u3048\\u308b\\u304b\\u3082\\u3057\\u308c\\u306a\\u3044\\u3001UNIX\\u30bf\\u30a4\\u30e0\\u30b9\\u30bf\\u30f3\\u30d7\\u3068\\u65e5\\u6642\\u304c\\u30ad\\u30ea\\u306e\\u3044\\u3044\\u77ac\\u9593\\u3092\\u30ea\\u30b9\\u30c8\\u30a2\\u30c3\\u30d7\\u3057\\u3066\\u307f\\u307e\\u3057\\u305f\\u3002</p>\n\n<p>\\u30bf\\u30a4\\u30e0\\u30be\\u30fc\\u30f3\\u306f <code>Asia/Tokyo</code> \\u3067\\u30011970\\u5e74\\u304b\\u30892100\\u5e74\\u306e\\u9593\\u306e\\u3082\\u306e\\u3067\\u3059\\u3002</p>\n\n<h2>\\u58f1 1998-03-03 08:08:08</h2>\n\n<h3>\\u3000\\u3000888880088</h3>\n\n<p>\\u591a\\u304f\\u304c 8 \\u3067\\u3067\\u304d\\u3066\\u3044\\u308b\\u6642\\u9593\\u3067\\u3059\\u3002<br>\n\\u904e\\u53bb\\u306e\\u65e5\\u4ed8\\u3067\\u306f\\u3042\\u308a\\u307e\\u3059\\u304c\\u3001\\u3053\\u306e\\u4e2d\\u3067\\u306f\\u4e00\\u62bc\\u3057\\u3067\\u3059\\u3002<br>\n3 \\u3082\\u306a\\u3093\\u3068\\u306a\\u304f 8 \\u306b\\u898b\\u3048\\u306a\\u3044\\u3053\\u3068\\u3082\\u306a\\u3044\\uff01\\uff1f</p>\n\n<h2>\\u5f10 2001-09-09 08:08:08</h2>\n\n<h3>\\u3000\\u3000999990488</h3>\n\n<p>\\u4eca\\u65e5\\u304b\\u3089\\u6700\\u3082\\u8fd1\\u3044\\u904e\\u53bb\\u306e\\u6642\\u9593\\u3067\\u3059\\u3002<br>\n9 \\u3068 8 \\u304c\\u591a\\u3044\\u306e\\u304c\\u5370\\u8c61\\u7684\\u3067\\u3059\\u306d\\u3002</p>\n\n<h2>\\u53c2 2027-06-06 04:04:04</h2>\n\n<h3>\\u3000\\u30001812222244</h3>\n\n<p>\\u4eca\\u65e5\\u304b\\u3089\\u6700\\u3082\\u8fd1\\u3044\\u672a\\u6765\\u306e\\u6642\\u9593\\u3067\\u3059\\u3002<br>\n\\u5076\\u6570\\u304c\\u591a\\u3044\\u304b\\u3093\\u3058\\u3067\\u3059\\u3002</p>\n\n<h2>\\u56db 2047-06-06 08:08:08</h2>\n\n<h3>\\u3000\\u30002443388888</h3>\n\n<p>244\\u306f2047\\u5e74\\u3068\\u4f3c\\u3066\\u3044\\u308b\\u3057\\u300133\\u306f\\u500d\\u306b\\u3059\\u308c\\u30706\\u67086\\u65e5\\u3002<br>\n\\u6b8b\\u308a\\u306e88888\\u306f8\\u66428\\u52068\\u79d2\\u3068\\u3044\\u3046\\u3075\\u3046\\u306b\\u899a\\u3048\\u308c\\u3070\\u2026\\u3002</p>\n\n<h2>\\u4f0d 2079-04-04 08:08:08</h2>\n\n<h3>\\u3000\\u30003447788888</h3>\n\n<p>\\u3053\\u306e\\u6642\\u9593\\u3082 8 \\u304c\\u591a\\u3044\\u3067\\u3059\\u306d\\u3002\\u5076\\u7136\\u3067\\u3057\\u3087\\u3046\\u304b\\uff1f</p>\n\n<h2>\\u516d 2095-05-05 08:08:08</h2>\n\n<h3>\\u3000\\u30003955388888</h3>\n\n<p>\\u9060\\u76ee\\u3067\\u898b\\u308b\\u3068\\u5e74\\u6708\\u65e5\\u3068\\u30bf\\u30a4\\u30e0\\u30b9\\u30bf\\u30f3\\u30d7\\u304c\\u540c\\u3058\\u6587\\u5b57\\u3067\\u3067\\u304d\\u3066\\u3044\\u308b\\u3088\\u3046\\u306b\\u3082\\u898b\\u3048\\u307e\\u3059\\u3002</p>\n\n<h2>\\u4e03 2098-07-07 16:16:16</h2>\n\n<h3>\\u3000\\u30004055555776</h3>\n\n<p>7\\u67087\\u65e5\\u300216\\u306f1+6\\u30677\\u3068\\u30017\\u306b\\u5186\\u306e\\u3042\\u308b\\u65e5\\u6642\\u3067\\u3059\\u3002</p>\n\n<h2>\\u8a08\\u7b97\\u306b\\u4f7f\\u3063\\u305f\\u30b9\\u30af\\u30ea\\u30d7\\u30c8</h2>\n<div class=\"code-frame\"><div class=\"code-lang\"><span class=\"bold\">PHP</span></div><div class=\"highlight\"><pre><span class=\"cp\">&lt;?php</span>\n\n<span class=\"nb\">date_default_timezone_set</span><span class=\"p\">(</span><span class=\"s1\">&#39;Asia/Tokyo&#39;</span><span class=\"p\">);</span>\n\n<span class=\"nb\">define</span><span class=\"p\">(</span><span class=\"s1\">&#39;SCORE_MIN&#39;</span><span class=\"p\">,</span> <span class=\"mi\">16</span><span class=\"p\">);</span>\n\n<span class=\"k\">function</span> <span class=\"nf\">get_score</span><span class=\"p\">(</span><span class=\"nv\">$string</span><span class=\"p\">)</span>\n<span class=\"p\">{</span>\n    <span class=\"nv\">$string</span> <span class=\"o\">=</span> <span class=\"nb\">strval</span><span class=\"p\">(</span><span class=\"nv\">$string</span><span class=\"p\">);</span>\n    <span class=\"nv\">$length</span> <span class=\"o\">=</span> <span class=\"nb\">strlen</span><span class=\"p\">(</span><span class=\"nv\">$string</span><span class=\"p\">);</span>\n    <span class=\"nv\">$lastChar</span> <span class=\"o\">=</span> <span class=\"k\">null</span><span class=\"p\">;</span>\n    <span class=\"nv\">$combo</span> <span class=\"o\">=</span> <span class=\"mi\">0</span><span class=\"p\">;</span>\n    <span class=\"nv\">$score</span> <span class=\"o\">=</span> <span class=\"mi\">0</span><span class=\"p\">;</span>\n\n    <span class=\"k\">for</span> <span class=\"p\">(</span> <span class=\"nv\">$i</span> <span class=\"o\">=</span> <span class=\"mi\">0</span><span class=\"p\">;</span> <span class=\"nv\">$i</span> <span class=\"o\">&lt;</span> <span class=\"nv\">$length</span><span class=\"p\">;</span> <span class=\"nv\">$i</span> <span class=\"o\">+=</span> <span class=\"mi\">1</span> <span class=\"p\">)</span>\n    <span class=\"p\">{</span>\n        <span class=\"nv\">$thisChar</span> <span class=\"o\">=</span> <span class=\"nv\">$string</span><span class=\"p\">[</span><span class=\"nv\">$i</span><span class=\"p\">];</span>\n\n        <span class=\"k\">if</span> <span class=\"p\">(</span> <span class=\"nv\">$lastChar</span> <span class=\"o\">===</span> <span class=\"nv\">$thisChar</span> <span class=\"p\">)</span>\n        <span class=\"p\">{</span>\n            <span class=\"k\">if</span> <span class=\"p\">(</span> <span class=\"nv\">$combo</span> <span class=\"o\">===</span> <span class=\"mi\">0</span> <span class=\"p\">)</span>\n            <span class=\"p\">{</span>\n                <span class=\"nv\">$combo</span> <span class=\"o\">=</span> <span class=\"mi\">1</span><span class=\"p\">;</span>\n            <span class=\"p\">}</span>\n\n            <span class=\"nv\">$combo</span> <span class=\"o\">*=</span> <span class=\"mi\">2</span><span class=\"p\">;</span>\n        <span class=\"p\">}</span>\n        <span class=\"k\">else</span>\n        <span class=\"p\">{</span>\n            <span class=\"nv\">$score</span> <span class=\"o\">+=</span> <span class=\"nv\">$combo</span><span class=\"p\">;</span>\n            <span class=\"nv\">$combo</span> <span class=\"o\">=</span> <span class=\"mi\">0</span><span class=\"p\">;</span>\n        <span class=\"p\">}</span>\n\n        <span class=\"nv\">$lastChar</span> <span class=\"o\">=</span> <span class=\"nv\">$thisChar</span><span class=\"p\">;</span>\n    <span class=\"p\">}</span>\n\n    <span class=\"nv\">$score</span> <span class=\"o\">+=</span> <span class=\"nv\">$combo</span><span class=\"p\">;</span>\n    <span class=\"k\">return</span> <span class=\"nv\">$score</span><span class=\"p\">;</span>\n<span class=\"p\">}</span>\n\n<span class=\"nv\">$prettyTimes</span> <span class=\"o\">=</span> <span class=\"p\">[];</span>\n\n<span class=\"k\">for</span> <span class=\"p\">(</span> <span class=\"nv\">$year</span> <span class=\"o\">=</span> <span class=\"mi\">1970</span><span class=\"p\">;</span> <span class=\"nv\">$year</span> <span class=\"o\">&lt;</span> <span class=\"mi\">2100</span><span class=\"p\">;</span> <span class=\"nv\">$year</span> <span class=\"o\">+=</span> <span class=\"mi\">1</span> <span class=\"p\">)</span>\n<span class=\"p\">{</span>\n    <span class=\"k\">for</span> <span class=\"p\">(</span> <span class=\"nv\">$month</span> <span class=\"o\">=</span> <span class=\"mi\">1</span><span class=\"p\">;</span> <span class=\"nv\">$month</span> <span class=\"o\">&lt;=</span> <span class=\"mi\">12</span><span class=\"p\">;</span> <span class=\"nv\">$month</span> <span class=\"o\">+=</span> <span class=\"mi\">1</span> <span class=\"p\">)</span>\n    <span class=\"p\">{</span>\n        <span class=\"nv\">$day</span> <span class=\"o\">=</span> <span class=\"nv\">$month</span><span class=\"p\">;</span>\n\n        <span class=\"k\">for</span> <span class=\"p\">(</span> <span class=\"nv\">$hour</span> <span class=\"o\">=</span> <span class=\"mi\">0</span><span class=\"p\">;</span> <span class=\"nv\">$hour</span> <span class=\"o\">&lt;=</span> <span class=\"mi\">23</span><span class=\"p\">;</span> <span class=\"nv\">$hour</span> <span class=\"o\">+=</span><span class=\"mi\">1</span> <span class=\"p\">)</span>\n        <span class=\"p\">{</span>\n            <span class=\"nv\">$min</span> <span class=\"o\">=</span> <span class=\"nv\">$hour</span><span class=\"p\">;</span>\n            <span class=\"nv\">$sec</span> <span class=\"o\">=</span> <span class=\"nv\">$hour</span><span class=\"p\">;</span>\n\n            <span class=\"nv\">$timestamp</span> <span class=\"o\">=</span> <span class=\"nb\">mktime</span><span class=\"p\">(</span><span class=\"nv\">$hour</span><span class=\"p\">,</span> <span class=\"nv\">$min</span><span class=\"p\">,</span> <span class=\"nv\">$sec</span><span class=\"p\">,</span> <span class=\"nv\">$month</span><span class=\"p\">,</span> <span class=\"nv\">$day</span><span class=\"p\">,</span> <span class=\"nv\">$year</span><span class=\"p\">);</span>\n\n            <span class=\"nv\">$score</span> <span class=\"o\">=</span> <span class=\"nx\">get_score</span><span class=\"p\">(</span><span class=\"nv\">$timestamp</span><span class=\"p\">);</span>\n\n            <span class=\"k\">if</span> <span class=\"p\">(</span> <span class=\"nv\">$score</span> <span class=\"o\">&gt;</span> <span class=\"nx\">SCORE_MIN</span> <span class=\"p\">)</span>\n            <span class=\"p\">{</span>\n                <span class=\"nv\">$prettyTimes</span><span class=\"p\">[]</span> <span class=\"o\">=</span> <span class=\"nb\">sprintf</span><span class=\"p\">(</span><span class=\"s1\">&#39;date: %04u-%02u-%02u %02u:%02u:%02u, timestamp: %u, score: %u&#39;</span><span class=\"p\">,</span> <span class=\"nv\">$year</span><span class=\"p\">,</span> <span class=\"nv\">$month</span><span class=\"p\">,</span> <span class=\"nv\">$day</span><span class=\"p\">,</span> <span class=\"nv\">$hour</span><span class=\"p\">,</span> <span class=\"nv\">$min</span><span class=\"p\">,</span> <span class=\"nv\">$sec</span><span class=\"p\">,</span> <span class=\"nv\">$timestamp</span><span class=\"p\">,</span> <span class=\"nv\">$score</span><span class=\"p\">);</span>\n            <span class=\"p\">}</span>\n        <span class=\"p\">}</span>\n    <span class=\"p\">}</span>\n<span class=\"p\">}</span>\n\n<span class=\"k\">echo</span> <span class=\"nb\">implode</span><span class=\"p\">(</span><span class=\"s2\">&quot;</span><span class=\"se\">\n</span><span class=\"s2\">&quot;</span><span class=\"p\">,</span> <span class=\"nv\">$prettyTimes</span><span class=\"p\">);</span>\n</pre>\n</div>\n</div>",
+    "created_at": "2012-10-12 23:50:59 +0900",
+    "updated_at": "2012-10-12 23:50:59 +0900",
+    "created_at_in_words": "14\\u6642\\u9593\\u524d",
+    "updated_at_in_words": "14\\u6642\\u9593\\u524d",
+    "tags": [
+      {
+        "name": "PHP",
+        "url_name": "PHP",
+        "icon_url": "http://qiita.com/system/tags/icons/000/000/006/thumb/PHP.png?1338128905",
+        "item_count": 454,
+        "follower_count": 2515,
+        "versions": []
+      },
+      {
+        "name": "UNIX",
+        "url_name": "UNIX",
+        "icon_url": "http://qiita.com/system/tags/icons/000/000/333/thumb/Poundexclam.png?1338508869",
+        "item_count": 23,
+        "follower_count": 65,
+        "versions": []
+      }
+    ],
+    "stock_count": 1,
+    "stock_users": [
+      "usamik26"
+    ],
+    "comment_count": 1,
+    "url": "http://qiita.com/items/3afb4f1245ec61cae8e0",
+    "gist_url": null,
+    "private": false,
+    "created_at_as_seconds": 1350053459
+  },
+  {
+    "id": 9852,
+    "uuid": "f27fef5335752a3e37ec",
+    "user": {
+      "name": "USAMI Kosuke",
+      "url_name": "usamik26",
+      "profile_image_url": "https://si0.twimg.com/profile_images/2263775527/profile_normal.jpg"
+    },
+    "title": "cygwin vim \\u3067\\u30af\\u30ea\\u30c3\\u30d7\\u30dc\\u30fc\\u30c9\\u3092\\u4f7f\\u3046",
+    "body": "<p>cygwin \\u30b3\\u30f3\\u30bd\\u30fc\\u30eb\\u7248 vim \\u306f +clipboard \\u30d0\\u30fc\\u30b8\\u30e7\\u30f3\\u3067\\u306f\\u3042\\u308a\\u307e\\u305b\\u3093\\u3002<br>\n\\u3057\\u304b\\u3057\\u3001cygwin \\u306e\\u6a5f\\u80fd\\u3092\\u6d3b\\u7528\\u3059\\u308c\\u3070\\u9593\\u63a5\\u7684\\u306b\\u30af\\u30ea\\u30c3\\u30d7\\u30dc\\u30fc\\u30c9\\u3092\\u6271\\u3046\\u3053\\u3068\\u304c\\u3067\\u304d\\u307e\\u3059\\u3002</p>\n\n<h1>vim \\u304b\\u3089\\u30af\\u30ea\\u30c3\\u30d7\\u30dc\\u30fc\\u30c9\\u3078\\u306e\\u30b3\\u30d4\\u30fc</h1>\n\n<p>\\u4ee5\\u4e0b\\u306e\\u30b3\\u30de\\u30f3\\u30c9\\u3067\\u3001\\u30d0\\u30c3\\u30d5\\u30a1\\u5168\\u4f53\\u3092\\u30af\\u30ea\\u30c3\\u30d7\\u30dc\\u30fc\\u30c9\\u306b\\u9001\\u308b\\u3053\\u3068\\u304c\\u3067\\u304d\\u307e\\u3059\\uff08<code>/dev/clipboard</code> \\u306f cygwin \\u306e\\u6a5f\\u80fd\\u306e\\u3072\\u3068\\u3064\\u3067\\u3059\\uff09\\u3002</p>\n<div class=\"code-frame\"><div class=\"code-lang\"><span class=\"bold\">Vim Script</span></div><div class=\"highlight\"><pre><span class=\"p\">:</span><span class=\"k\">w</span> <span class=\"p\">!</span><span class=\"k\">cat</span> <span class=\"p\">&gt;</span> <span class=\"sr\">/dev/</span><span class=\"nb\">clipboard</span>\n</pre>\n</div>\n</div>\n<p>\\u307e\\u305f\\u3001\\u30d3\\u30b8\\u30e5\\u30a2\\u30eb\\u30e2\\u30fc\\u30c9\\u3067\\u7bc4\\u56f2\\u9078\\u629e\\u3057\\u3066\\u304b\\u3089\\u4ee5\\u4e0b\\u306e\\u30b3\\u30de\\u30f3\\u30c9\\u3067\\u3001\\u9078\\u629e\\u90e8\\u5206\\u3092\\u30af\\u30ea\\u30c3\\u30d7\\u30dc\\u30fc\\u30c9\\u306b\\u9001\\u308b\\u3053\\u3068\\u304c\\u3067\\u304d\\u307e\\u3059\\u3002</p>\n<div class=\"code-frame\"><div class=\"code-lang\"><span class=\"bold\">Vim Script</span></div><div class=\"highlight\"><pre><span class=\"p\">:</span><span class=\"s1\">&#39;&lt;,&#39;</span><span class=\"p\">&gt;</span><span class=\"k\">w</span> <span class=\"p\">!</span><span class=\"k\">cat</span> <span class=\"p\">&gt;</span> <span class=\"sr\">/dev/</span><span class=\"nb\">clipboard</span>\n</pre>\n</div>\n</div>\n<p>\\u306a\\u304a\\u3001\\u30b3\\u30de\\u30f3\\u30c9\\u306e <code>&#39;&lt;,&#39;&gt;</code> \\u306e\\u90e8\\u5206\\u306f\\u3001\\u7bc4\\u56f2\\u9078\\u629e\\u4e2d\\u306b\\u30b3\\u30ed\\u30f3\\u3092\\u5165\\u529b\\u3059\\u308b\\u3068\\u52dd\\u624b\\u306b\\u633f\\u5165\\u3055\\u308c\\u308b\\u306e\\u3067\\u3001\\u5165\\u529b\\u3059\\u308b\\u306e\\u306f <code>w !cat &gt; /dev/clipboard</code> \\u306e\\u90e8\\u5206\\u3060\\u3051\\u3067\\u3059\\u3002</p>\n\n<h1>\\u30af\\u30ea\\u30c3\\u30d7\\u30dc\\u30fc\\u30c9\\u304b\\u3089 vim \\u3078\\u306e\\u30da\\u30fc\\u30b9\\u30c8</h1>\n\n<p>mintty \\u306e\\u6a5f\\u80fd\\u3092\\u4f7f\\u3046\\u306e\\u304c\\u7c21\\u5358\\u3067\\u3059\\u3002<br>\nvim \\u3092\\u633f\\u5165\\u30e2\\u30fc\\u30c9\\u306b\\u3057\\u3066\\u3001mintty \\u306e\\u30da\\u30fc\\u30b9\\u30c8\\uff08Ctrl-Shift-V \\u307e\\u305f\\u306f Shift-Ins\\uff09\\u3092\\u884c\\u3048\\u3070\\u3088\\u3044\\u3067\\u3059\\u3002</p>\n",
+    "created_at": "2012-10-12 23:36:31 +0900",
+    "updated_at": "2012-10-12 23:36:31 +0900",
+    "created_at_in_words": "14\\u6642\\u9593\\u524d",
+    "updated_at_in_words": "14\\u6642\\u9593\\u524d",
+    "tags": [
+      {
+        "name": "Cygwin",
+        "url_name": "Cygwin",
+        "icon_url": "http://qiita.com/system/tags/icons/000/000/853/thumb/152-smooth_1_.png?1339889606",
+        "item_count": 3,
+        "follower_count": 9,
+        "versions": []
+      },
+      {
+        "name": "Vim",
+        "url_name": "Vim",
+        "icon_url": "http://qiita.com/system/tags/icons/000/000/008/thumb/vim-editor_logo.png?1316130850",
+        "item_count": 191,
+        "follower_count": 2259,
+        "versions": []
+      }
+    ],
+    "stock_count": 0,
+    "stock_users": [],
+    "comment_count": 0,
+    "url": "http://qiita.com/items/f27fef5335752a3e37ec",
+    "gist_url": null,
+    "private": false,
+    "created_at_as_seconds": 1350052591
+  },
+  {
+    "id": 9851,
+    "uuid": "ae974926fc587dc6e4f9",
+    "user": {
+      "name": "kenji0302",
+      "url_name": "kenji0302",
+      "profile_image_url": "https://si0.twimg.com/profile_images/35122712/352999_509929201_normal.jpg"
+    },
+    "title": "\\u30ec\\u30b9\\u30dd\\u30f3\\u30b9\\u306b1\\u79d2\\u4ee5\\u4e0a\\u304b\\u304b\\u3063\\u305f\\u3089beep\\u97f3\\u3092\\u9cf4\\u3089\\u3059",
+    "body": "<p>\\u5f15\\u6570\\u3067\\u6e21\\u3057\\u305fURL\\u3092curl\\u3067\\u53d6\\u5f97\\u3001\\u53d6\\u5f97\\u306b1\\u79d2\\u4ee5\\u4e0a\\u304b\\u304b\\u3063\\u305f\\u3089\\u30d3\\u30fc\\u30d7\\u97f3\\u3092\\u9cf4\\u3089\\u3059\\u3088\\u3002</p>\n<div class=\"code-frame\"><div class=\"code-lang\"><span class=\"bold\"></span></div><div class=\"highlight\"><pre><span class=\"nv\">$ </span>check.sh http://www.yahoo.co.jp/\n</pre>\n</div>\n</div><div class=\"code-frame\"><div class=\"code-lang\"><span class=\"bold\">check.sh</span></div><div class=\"highlight\"><pre><span class=\"c\">#!/bin/sh</span>\n\n<span class=\"k\">if</span> <span class=\"o\">[</span> <span class=\"nv\">$# </span>-ne 1 <span class=\"o\">]</span>; <span class=\"k\">then</span>\n<span class=\"k\">    </span><span class=\"nb\">echo</span> <span class=\"s2\">&quot;set url&quot;</span> 1&gt;&amp;2\n    <span class=\"nb\">exit </span>1\n<span class=\"k\">fi</span>\n\n<span class=\"nv\">START</span><span class=\"o\">=</span><span class=\"sb\">`</span>date +%s<span class=\"sb\">`</span>\ncurl <span class=\"nv\">$0</span> &gt; /dev/null 2&gt;&amp;1\n<span class=\"nv\">END</span><span class=\"o\">=</span><span class=\"sb\">`</span>date +%s<span class=\"sb\">`</span>\n\n<span class=\"c\"># echo $(($END-$START))</span>\n\n<span class=\"k\">if</span> <span class=\"o\">[</span> <span class=\"k\">$((</span><span class=\"nv\">$END</span><span class=\"o\">-</span><span class=\"nv\">$START</span><span class=\"k\">))</span> -ge 0 <span class=\"o\">]</span>; <span class=\"k\">then</span>\n<span class=\"k\">    </span><span class=\"nb\">echo</span> <span class=\"se\">\\\\</span>a\n<span class=\"k\">fi</span>\n</pre>\n</div>\n</div>",
+    "created_at": "2012-10-12 22:24:47 +0900",
+    "updated_at": "2012-10-12 22:25:41 +0900",
+    "created_at_in_words": "15\\u6642\\u9593\\u524d",
+    "updated_at_in_words": "15\\u6642\\u9593\\u524d",
+    "tags": [
+      {
+        "name": "ShellScript",
+        "url_name": "ShellScript",
+        "icon_url": "http://qiita.com/system/tags/icons/000/000/009/thumb/shellscript.png?1316130734",
+        "item_count": 110,
+        "follower_count": 1254,
+        "versions": []
+      }
+    ],
+    "stock_count": 1,
+    "stock_users": [
+      "usamik26"
+    ],
+    "comment_count": 0,
+    "url": "http://qiita.com/items/ae974926fc587dc6e4f9",
+    "gist_url": null,
+    "private": false,
+    "created_at_as_seconds": 1350048287
+  },
+  {
+    "id": 9850,
+    "uuid": "e18e48cc3216be1a7f58",
+    "user": {
+      "name": "kanebako",
+      "url_name": "kaneaainc",
+      "profile_image_url": "https://secure.gravatar.com/avatar/64848a60af4a37677dec802af84dfc92?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png"
+    },
+    "title": "hoge",
+    "body": "<p>piyo</p>\n",
+    "created_at": "2012-10-12 22:18:02 +0900",
+    "updated_at": "2012-10-12 22:18:02 +0900",
+    "created_at_in_words": "15\\u6642\\u9593\\u524d",
+    "updated_at_in_words": "15\\u6642\\u9593\\u524d",
+    "tags": [
+      {
+        "name": "PHP",
+        "url_name": "PHP",
+        "icon_url": "http://qiita.com/system/tags/icons/000/000/006/thumb/PHP.png?1338128905",
+        "item_count": 454,
+        "follower_count": 2515,
+        "versions": []
+      }
+    ],
+    "stock_count": 1,
+    "stock_users": [
+      "kaneaainc"
+    ],
+    "comment_count": 0,
+    "url": "http://qiita.com/items/e18e48cc3216be1a7f58",
+    "gist_url": null,
+    "private": false,
+    "created_at_as_seconds": 1350047882
+  },
+  {
+    "id": 9849,
+    "uuid": "24a2b86348c4deec69fd",
+    "user": {
+      "name": "laiso(\\u30ec\\u30a4\\u30bd\\u30fc)",
+      "url_name": "laiso",
+      "profile_image_url": "https://si0.twimg.com/profile_images/1453556212/profile_img.png.128.1291829485_reasonably_small_normal.png"
+    },
+    "title": "vim-quickrun\\u3067\\u5b9f\\u884c\\u3057\\u305fRSpec\\u306e\\u7d50\\u679c\\u306b\\u30ec\\u30c3\\u30c9\\u30d0\\u30fc/\\u30b0\\u30ea\\u30fc\\u30f3\\u30d0\\u30fc\\u3092\\u8868\\u793a\\u3059\\u308b",
+    "body": "<p>vim-quickrun\\u3067\\u5b9f\\u884c\\u3057\\u305fRSpec\\u306e\\u7d50\\u679c\\u306b\\u30ec\\u30c3\\u30c9\\u30d0\\u30fc/\\u30b0\\u30ea\\u30fc\\u30f3\\u30d0\\u30fc\\u3092\\u8868\\u793a\\u3059\\u308b</p>\n\n<p><a href=\"http://vim.g.hatena.ne.jp/tokorom/20120226/1330278123\" title=\"vim-quickrun\\u3067\\u5b9f\\u884c\\u3057\\u305fRSpec\\u306e\\u7d50\\u679c\\u306b\\u30ec\\u30c3\\u30c9\\u30d0\\u30fc/\\u30b0\\u30ea\\u30fc\\u30f3\\u30d0\\u30fc\\u3092\\u8868\\u793a\\u3059\\u308b - vim\\u307e\\u3063\\u3057\\u3050\\u3089\\u2605 - vim\\u30b0\\u30eb\\u30fc\\u30d7\">vim-quickrun\\u3067\\u5b9f\\u884c\\u3057\\u305fRSpec\\u306e\\u7d50\\u679c\\u306b\\u30ec\\u30c3\\u30c9\\u30d0\\u30fc/\\u30b0\\u30ea\\u30fc\\u30f3\\u30d0\\u30fc\\u3092\\u8868\\u793a\\u3059\\u308b - vim\\u307e\\u3063\\u3057\\u3050\\u3089\\u2605 - vim\\u30b0\\u30eb\\u30fc\\u30d7</a></p>\n\n<p>\\u3092\\u53c2\\u8003\\u306b\\u81ea\\u5206\\u306e\\u74b0\\u5883\\u3067\\u52d5\\u304b\\u306a\\u304b\\u3063\\u305f\\u3068\\u3053\\u308d\\u3092\\u3044\\u3058\\u3063\\u305f\\u3002</p>\n<div class=\"code-frame\"><div class=\"code-lang\"><span class=\"bold\">~/.vim/ftdetect/ruby.vim</span></div><div class=\"highlight\"><pre>autocmd <span class=\"nb\">BufWinEnter</span><span class=\"p\">,</span><span class=\"nb\">BufNewFile</span> *_spec.rb <span class=\"k\">set</span> <span class=\"k\">filetype</span><span class=\"p\">=</span><span class=\"k\">ruby</span>.rspec\n</pre>\n</div>\n</div><div class=\"code-frame\"><div class=\"code-lang\"><span class=\"bold\">~/.vim/after/ftplugin/ruby.vim</span></div><div class=\"highlight\"><pre><span class=\"k\">let</span> <span class=\"k\">g</span>:quickrun_config[<span class=\"s1\">&#39;ruby.rspec&#39;</span>] <span class=\"p\">=</span> {<span class=\"s1\">&#39;command&#39;</span>: <span class=\"s1\">&#39;rspec&#39;</span><span class=\"p\">,</span> <span class=\"s1\">&#39;cmdopt&#39;</span>: <span class=\"s1\">&#39;--format progress -I .&#39;</span><span class=\"p\">,</span> <span class=\"s1\">&#39;outputter&#39;</span>: <span class=\"s1\">&#39;buffer:filetype=rspec-result&#39;</span>}\n</pre>\n</div>\n</div><div class=\"code-frame\"><div class=\"code-lang\"><span class=\"bold\">~/.vim/syntax/rspec-result.vim</span></div><div class=\"highlight\"><pre><span class=\"k\">if</span> exists<span class=\"p\">(</span><span class=\"s2\">&quot;b:current_syntax&quot;</span><span class=\"p\">)</span>\n  <span class=\"k\">finish</span>\n<span class=\"k\">endif</span>\n\n<span class=\"k\">if</span> <span class=\"p\">!</span>exists<span class=\"p\">(</span><span class=\"s2\">&quot;main_syntax&quot;</span><span class=\"p\">)</span>\n  <span class=\"k\">let</span> main_syntax <span class=\"p\">=</span> <span class=\"s1\">&#39;rspec-result&#39;</span>\n<span class=\"k\">endif</span>\n\n<span class=\"nb\">syntax</span> case <span class=\"k\">match</span>\n\n<span class=\"nb\">syntax</span> <span class=\"k\">match</span> RSpecGreen <span class=\"sr\">/^\\.*$/</span>\n<span class=\"nb\">syntax</span> <span class=\"k\">match</span> RSpecRed   <span class=\"sr\">/^[F.]*F[F.]*$/</span>\n<span class=\"nb\">syntax</span> <span class=\"k\">match</span> RSpecGreen <span class=\"sr\">/^.* 0 failure.*$/</span>\n<span class=\"nb\">syntax</span> <span class=\"k\">match</span> RSpecRed   <span class=\"sr\">/^.* [1-9][0-9]* failure.*$/</span>\n\n<span class=\"nb\">highlight</span> RSpecGreen ctermfg<span class=\"p\">=</span>White ctermbg<span class=\"p\">=</span>Green guifg<span class=\"p\">=</span>White guibg<span class=\"p\">=</span>Green\n<span class=\"nb\">highlight</span> RSpecRed   ctermfg<span class=\"p\">=</span>White ctermbg<span class=\"p\">=</span>Red   guifg<span class=\"p\">=</span>White guibg<span class=\"p\">=</span>Red\n\n<span class=\"c\">&quot;unlet b:current_syntax</span>\n<span class=\"k\">let</span> <span class=\"k\">b</span>:current_syntax <span class=\"p\">=</span> <span class=\"s1\">&#39;rspec-result&#39;</span>\n\n<span class=\"k\">if</span> main_syntax <span class=\"p\">==</span> <span class=\"s1\">&#39;rspec-result&#39;</span>\n  unlet main_syntax\n<span class=\"k\">endif</span>\n</pre>\n</div>\n</div>",
+    "created_at": "2012-10-12 22:17:55 +0900",
+    "updated_at": "2012-10-12 22:17:55 +0900",
+    "created_at_in_words": "15\\u6642\\u9593\\u524d",
+    "updated_at_in_words": "15\\u6642\\u9593\\u524d",
+    "tags": [
+      {
+        "name": "Rspec",
+        "url_name": "Rspec",
+        "icon_url": "http://qiita.com/system/tags/icons/000/000/104/thumb/rspec_logo1.jpg?1337225023",
+        "item_count": 60,
+        "follower_count": 111,
+        "versions": []
+      },
+      {
+        "name": "Vim",
+        "url_name": "Vim",
+        "icon_url": "http://qiita.com/system/tags/icons/000/000/008/thumb/vim-editor_logo.png?1316130850",
+        "item_count": 191,
+        "follower_count": 2259,
+        "versions": []
+      }
+    ],
+    "stock_count": 0,
+    "stock_users": [],
+    "comment_count": 0,
+    "url": "http://qiita.com/items/24a2b86348c4deec69fd",
+    "gist_url": null,
+    "private": false,
+    "created_at_as_seconds": 1350047875
+  },
+  {
+    "id": 9843,
+    "uuid": "5ccd2c7d0309d80eea24",
+    "user": {
+      "name": "kanebako",
+      "url_name": "kaneaainc",
+      "profile_image_url": "https://secure.gravatar.com/avatar/64848a60af4a37677dec802af84dfc92?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png"
+    },
+    "title": "hoge",
+    "body": "<p>piyo</p>\n",
+    "created_at": "2012-10-12 21:53:28 +0900",
+    "updated_at": "2012-10-12 21:53:28 +0900",
+    "created_at_in_words": "16\\u6642\\u9593\\u524d",
+    "updated_at_in_words": "16\\u6642\\u9593\\u524d",
+    "tags": [
+      {
+        "name": "PHP",
+        "url_name": "PHP",
+        "icon_url": "http://qiita.com/system/tags/icons/000/000/006/thumb/PHP.png?1338128905",
+        "item_count": 454,
+        "follower_count": 2515,
+        "versions": []
+      }
+    ],
+    "stock_count": 0,
+    "stock_users": [],
+    "comment_count": 0,
+    "url": "http://qiita.com/items/5ccd2c7d0309d80eea24",
+    "gist_url": null,
+    "private": false,
+    "created_at_as_seconds": 1350046408
+  },
+  {
+    "id": 9838,
+    "uuid": "b134327e7a7d00daa823",
+    "user": {
+      "name": "Taiki",
+      "url_name": "tyoshikawa1106",
+      "profile_image_url": "https://secure.gravatar.com/avatar/db3147362f7b534f56fce3488430a08e?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png"
+    },
+    "title": "BODY\\u30bf\\u30b0\\u306e\\u5ba3\\u8a00",
+    "body": "<p>\\u4ee5\\u524d\\u3001showHeader=&quot;false&quot;\\u306b\\u3057\\u3066IE\\u3067\\u8868\\u793a\\u3057\\u305f\\u969b\\u306bStyle\\u304c\\u9069\\u7528\\u3055\\u308c\\u306a\\u3044\\u3053\\u3068\\u304c\\u3042\\u308a\\u307e\\u3057\\u305f\\u3002</p>\n\n<p>\\u6b21\\u306e\\u3088\\u3046\\u306bbody\\u30bf\\u30b0\\u3092\\u5ba3\\u8a00\\u3059\\u308b\\u3053\\u3068\\u3067\\u6b63\\u5e38\\u306b\\u8868\\u793a\\u3067\\u304d\\u307e\\u3057\\u305f\\u3002</p>\n<div class=\"code-frame\"><div class=\"highlight\"><pre>&lt;body&gt;\n    &lt;form&gt;\n      \\u30fb\\u30fb\\u30fb   \n    &lt;/form&gt;\n&lt;/body&gt;\n</pre>\n</div>\n</div>",
+    "created_at": "2012-10-12 21:35:36 +0900",
+    "updated_at": "2012-10-12 21:53:38 +0900",
+    "created_at_in_words": "16\\u6642\\u9593\\u524d",
+    "updated_at_in_words": "16\\u6642\\u9593\\u524d",
+    "tags": [
+      {
+        "name": "Visualforce",
+        "url_name": "Visualforce",
+        "icon_url": "http://qiita.com/icons/thumb/missing.png",
+        "item_count": 1,
+        "follower_count": 1,
+        "versions": []
+      }
+    ],
+    "stock_count": 0,
+    "stock_users": [],
+    "comment_count": 0,
+    "url": "http://qiita.com/items/b134327e7a7d00daa823",
+    "gist_url": null,
+    "private": false,
+    "created_at_as_seconds": 1350045336
+  }
+]
