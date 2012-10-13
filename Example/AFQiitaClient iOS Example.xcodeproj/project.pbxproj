@@ -28,15 +28,14 @@
 		8544D10F1628A79600FA1144 /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544D1051628A79600FA1144 /* AFXMLRequestOperation.m */; };
 		8544D1101628A79600FA1144 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544D1071628A79600FA1144 /* UIImageView+AFNetworking.m */; };
 		8544D1121628A7BA00FA1144 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8544D1111628A7BA00FA1144 /* SystemConfiguration.framework */; };
-		8544D1C51628E7DD00FA1144 /* AFQiitaClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544D1B71628E7DD00FA1144 /* AFQiitaClient.m */; };
-		8544D1C61628E7DD00FA1144 /* AFQiitaComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544D1B91628E7DD00FA1144 /* AFQiitaComment.m */; };
-		8544D1C71628E7DD00FA1144 /* AFQiitaItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544D1BB1628E7DD00FA1144 /* AFQiitaItem.m */; };
-		8544D1C81628E7DD00FA1144 /* AFQiitaRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544D1BE1628E7DD00FA1144 /* AFQiitaRequestOperation.m */; };
-		8544D1C91628E7DD00FA1144 /* AFQiitaResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544D1C01628E7DD00FA1144 /* AFQiitaResponse.m */; };
-		8544D1CA1628E7DD00FA1144 /* AFQiitaTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544D1C21628E7DD00FA1144 /* AFQiitaTag.m */; };
-		8544D1CB1628E7DD00FA1144 /* AFQiitaUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544D1C41628E7DD00FA1144 /* AFQiitaUser.m */; };
-		8544D1D31628EA9400FA1144 /* AFQiitaLinkHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544D1D21628EA9400FA1144 /* AFQiitaLinkHeader.m */; };
-		8544D1E31629036400FA1144 /* NSDate+InternetDateTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544D1E21629036400FA1144 /* NSDate+InternetDateTime.m */; };
+		8544D2FA16292B1500FA1144 /* AFQiitaClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544D2EA16292B1500FA1144 /* AFQiitaClient.m */; };
+		8544D2FB16292B1500FA1144 /* AFQiitaComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544D2EC16292B1500FA1144 /* AFQiitaComment.m */; };
+		8544D2FC16292B1500FA1144 /* AFQiitaItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544D2EE16292B1500FA1144 /* AFQiitaItem.m */; };
+		8544D2FD16292B1500FA1144 /* AFQiitaLinkHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544D2F016292B1500FA1144 /* AFQiitaLinkHeader.m */; };
+		8544D2FE16292B1500FA1144 /* AFQiitaRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544D2F316292B1500FA1144 /* AFQiitaRequestOperation.m */; };
+		8544D2FF16292B1500FA1144 /* AFQiitaResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544D2F516292B1500FA1144 /* AFQiitaResponse.m */; };
+		8544D30016292B1500FA1144 /* AFQiitaTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544D2F716292B1500FA1144 /* AFQiitaTag.m */; };
+		8544D30116292B1500FA1144 /* AFQiitaUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544D2F916292B1500FA1144 /* AFQiitaUser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,26 +75,24 @@
 		8544D1061628A79600FA1144 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
 		8544D1071628A79600FA1144 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
 		8544D1111628A7BA00FA1144 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		8544D1B61628E7DD00FA1144 /* AFQiitaClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFQiitaClient.h; sourceTree = "<group>"; };
-		8544D1B71628E7DD00FA1144 /* AFQiitaClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFQiitaClient.m; sourceTree = "<group>"; };
-		8544D1B81628E7DD00FA1144 /* AFQiitaComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFQiitaComment.h; sourceTree = "<group>"; };
-		8544D1B91628E7DD00FA1144 /* AFQiitaComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFQiitaComment.m; sourceTree = "<group>"; };
-		8544D1BA1628E7DD00FA1144 /* AFQiitaItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFQiitaItem.h; sourceTree = "<group>"; };
-		8544D1BB1628E7DD00FA1144 /* AFQiitaItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFQiitaItem.m; sourceTree = "<group>"; };
-		8544D1BC1628E7DD00FA1144 /* AFQiitaObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFQiitaObject.h; sourceTree = "<group>"; };
-		8544D1BD1628E7DD00FA1144 /* AFQiitaRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFQiitaRequestOperation.h; sourceTree = "<group>"; };
-		8544D1BE1628E7DD00FA1144 /* AFQiitaRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFQiitaRequestOperation.m; sourceTree = "<group>"; };
-		8544D1BF1628E7DD00FA1144 /* AFQiitaResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFQiitaResponse.h; sourceTree = "<group>"; };
-		8544D1C01628E7DD00FA1144 /* AFQiitaResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFQiitaResponse.m; sourceTree = "<group>"; };
-		8544D1C11628E7DD00FA1144 /* AFQiitaTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFQiitaTag.h; sourceTree = "<group>"; };
-		8544D1C21628E7DD00FA1144 /* AFQiitaTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFQiitaTag.m; sourceTree = "<group>"; };
-		8544D1C31628E7DD00FA1144 /* AFQiitaUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFQiitaUser.h; sourceTree = "<group>"; };
-		8544D1C41628E7DD00FA1144 /* AFQiitaUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFQiitaUser.m; sourceTree = "<group>"; };
-		8544D1CD1628EA0500FA1144 /* AFQiita.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFQiita.h; sourceTree = "<group>"; };
-		8544D1D11628EA9400FA1144 /* AFQiitaLinkHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFQiitaLinkHeader.h; sourceTree = "<group>"; };
-		8544D1D21628EA9400FA1144 /* AFQiitaLinkHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFQiitaLinkHeader.m; sourceTree = "<group>"; };
-		8544D1E11629036400FA1144 /* NSDate+InternetDateTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+InternetDateTime.h"; sourceTree = "<group>"; };
-		8544D1E21629036400FA1144 /* NSDate+InternetDateTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+InternetDateTime.m"; sourceTree = "<group>"; };
+		8544D2E816292B1500FA1144 /* AFQiita.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFQiita.h; sourceTree = "<group>"; };
+		8544D2E916292B1500FA1144 /* AFQiitaClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFQiitaClient.h; sourceTree = "<group>"; };
+		8544D2EA16292B1500FA1144 /* AFQiitaClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFQiitaClient.m; sourceTree = "<group>"; };
+		8544D2EB16292B1500FA1144 /* AFQiitaComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFQiitaComment.h; sourceTree = "<group>"; };
+		8544D2EC16292B1500FA1144 /* AFQiitaComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFQiitaComment.m; sourceTree = "<group>"; };
+		8544D2ED16292B1500FA1144 /* AFQiitaItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFQiitaItem.h; sourceTree = "<group>"; };
+		8544D2EE16292B1500FA1144 /* AFQiitaItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFQiitaItem.m; sourceTree = "<group>"; };
+		8544D2EF16292B1500FA1144 /* AFQiitaLinkHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFQiitaLinkHeader.h; sourceTree = "<group>"; };
+		8544D2F016292B1500FA1144 /* AFQiitaLinkHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFQiitaLinkHeader.m; sourceTree = "<group>"; };
+		8544D2F116292B1500FA1144 /* AFQiitaObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFQiitaObject.h; sourceTree = "<group>"; };
+		8544D2F216292B1500FA1144 /* AFQiitaRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFQiitaRequestOperation.h; sourceTree = "<group>"; };
+		8544D2F316292B1500FA1144 /* AFQiitaRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFQiitaRequestOperation.m; sourceTree = "<group>"; };
+		8544D2F416292B1500FA1144 /* AFQiitaResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFQiitaResponse.h; sourceTree = "<group>"; };
+		8544D2F516292B1500FA1144 /* AFQiitaResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFQiitaResponse.m; sourceTree = "<group>"; };
+		8544D2F616292B1500FA1144 /* AFQiitaTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFQiitaTag.h; sourceTree = "<group>"; };
+		8544D2F716292B1500FA1144 /* AFQiitaTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFQiitaTag.m; sourceTree = "<group>"; };
+		8544D2F816292B1500FA1144 /* AFQiitaUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFQiitaUser.h; sourceTree = "<group>"; };
+		8544D2F916292B1500FA1144 /* AFQiitaUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFQiitaUser.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,26 +205,24 @@
 		8544D1B51628E7DD00FA1144 /* AFQiitaClient */ = {
 			isa = PBXGroup;
 			children = (
-				8544D1E11629036400FA1144 /* NSDate+InternetDateTime.h */,
-				8544D1E21629036400FA1144 /* NSDate+InternetDateTime.m */,
-				8544D1D11628EA9400FA1144 /* AFQiitaLinkHeader.h */,
-				8544D1D21628EA9400FA1144 /* AFQiitaLinkHeader.m */,
-				8544D1CD1628EA0500FA1144 /* AFQiita.h */,
-				8544D1B61628E7DD00FA1144 /* AFQiitaClient.h */,
-				8544D1B71628E7DD00FA1144 /* AFQiitaClient.m */,
-				8544D1B81628E7DD00FA1144 /* AFQiitaComment.h */,
-				8544D1B91628E7DD00FA1144 /* AFQiitaComment.m */,
-				8544D1BA1628E7DD00FA1144 /* AFQiitaItem.h */,
-				8544D1BB1628E7DD00FA1144 /* AFQiitaItem.m */,
-				8544D1BC1628E7DD00FA1144 /* AFQiitaObject.h */,
-				8544D1BD1628E7DD00FA1144 /* AFQiitaRequestOperation.h */,
-				8544D1BE1628E7DD00FA1144 /* AFQiitaRequestOperation.m */,
-				8544D1BF1628E7DD00FA1144 /* AFQiitaResponse.h */,
-				8544D1C01628E7DD00FA1144 /* AFQiitaResponse.m */,
-				8544D1C11628E7DD00FA1144 /* AFQiitaTag.h */,
-				8544D1C21628E7DD00FA1144 /* AFQiitaTag.m */,
-				8544D1C31628E7DD00FA1144 /* AFQiitaUser.h */,
-				8544D1C41628E7DD00FA1144 /* AFQiitaUser.m */,
+				8544D2E816292B1500FA1144 /* AFQiita.h */,
+				8544D2E916292B1500FA1144 /* AFQiitaClient.h */,
+				8544D2EA16292B1500FA1144 /* AFQiitaClient.m */,
+				8544D2EB16292B1500FA1144 /* AFQiitaComment.h */,
+				8544D2EC16292B1500FA1144 /* AFQiitaComment.m */,
+				8544D2ED16292B1500FA1144 /* AFQiitaItem.h */,
+				8544D2EE16292B1500FA1144 /* AFQiitaItem.m */,
+				8544D2EF16292B1500FA1144 /* AFQiitaLinkHeader.h */,
+				8544D2F016292B1500FA1144 /* AFQiitaLinkHeader.m */,
+				8544D2F116292B1500FA1144 /* AFQiitaObject.h */,
+				8544D2F216292B1500FA1144 /* AFQiitaRequestOperation.h */,
+				8544D2F316292B1500FA1144 /* AFQiitaRequestOperation.m */,
+				8544D2F416292B1500FA1144 /* AFQiitaResponse.h */,
+				8544D2F516292B1500FA1144 /* AFQiitaResponse.m */,
+				8544D2F616292B1500FA1144 /* AFQiitaTag.h */,
+				8544D2F716292B1500FA1144 /* AFQiitaTag.m */,
+				8544D2F816292B1500FA1144 /* AFQiitaUser.h */,
+				8544D2F916292B1500FA1144 /* AFQiitaUser.m */,
 			);
 			name = AFQiitaClient;
 			path = ../AFQiitaClient;
@@ -311,15 +306,14 @@
 				8544D10E1628A79600FA1144 /* AFURLConnectionOperation.m in Sources */,
 				8544D10F1628A79600FA1144 /* AFXMLRequestOperation.m in Sources */,
 				8544D1101628A79600FA1144 /* UIImageView+AFNetworking.m in Sources */,
-				8544D1C51628E7DD00FA1144 /* AFQiitaClient.m in Sources */,
-				8544D1C61628E7DD00FA1144 /* AFQiitaComment.m in Sources */,
-				8544D1C71628E7DD00FA1144 /* AFQiitaItem.m in Sources */,
-				8544D1C81628E7DD00FA1144 /* AFQiitaRequestOperation.m in Sources */,
-				8544D1C91628E7DD00FA1144 /* AFQiitaResponse.m in Sources */,
-				8544D1CA1628E7DD00FA1144 /* AFQiitaTag.m in Sources */,
-				8544D1CB1628E7DD00FA1144 /* AFQiitaUser.m in Sources */,
-				8544D1D31628EA9400FA1144 /* AFQiitaLinkHeader.m in Sources */,
-				8544D1E31629036400FA1144 /* NSDate+InternetDateTime.m in Sources */,
+				8544D2FA16292B1500FA1144 /* AFQiitaClient.m in Sources */,
+				8544D2FB16292B1500FA1144 /* AFQiitaComment.m in Sources */,
+				8544D2FC16292B1500FA1144 /* AFQiitaItem.m in Sources */,
+				8544D2FD16292B1500FA1144 /* AFQiitaLinkHeader.m in Sources */,
+				8544D2FE16292B1500FA1144 /* AFQiitaRequestOperation.m in Sources */,
+				8544D2FF16292B1500FA1144 /* AFQiitaResponse.m in Sources */,
+				8544D30016292B1500FA1144 /* AFQiitaTag.m in Sources */,
+				8544D30116292B1500FA1144 /* AFQiitaUser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +430,7 @@
 				8544D0ED1628A74D00FA1144 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

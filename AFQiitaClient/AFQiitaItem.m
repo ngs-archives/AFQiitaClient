@@ -34,9 +34,8 @@
     static NSDateFormatter *DateFormatter;
     if(!DateFormatter) {
       // "2012-10-13 13:30:19 +0900",
-      DateFormatter = [[NSDateFormatter alloc]
-                       initWithDateFormat:@"yyyy'-'MM'-'dd' 'HH':'mm':'ss ZZZ"
-                       allowNaturalLanguage:YES];
+      DateFormatter = [[NSDateFormatter alloc] init];
+      [DateFormatter setDateFormat:@"yyyy'-'MM'-'dd' 'HH':'mm':'ss ZZZ"];
     }
     if(dictionary[@"is_private"]&&
        ([dictionary[@"is_private"] isKindOfClass:[NSString class]] ||
