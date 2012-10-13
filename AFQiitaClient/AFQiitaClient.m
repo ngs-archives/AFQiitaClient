@@ -28,18 +28,31 @@
 #import "AFQiitaItem.h"
 #import "AFQiitaTag.h"
 #import "AFQiitaComment.h"
+#import "AFNetworkActivityIndicatorManager.h"
 
 static NSString *const kAFQiitaClientBaseURLPath = @"https://qiita.com/api/v1";
 
 @implementation AFQiitaClient
 
 - (id)init {
-  if(self = [super initWithBaseURL:[NSURL URLWithString:kAFQiitaClientBaseURLPath]]) {
-    [self registerHTTPOperationClass:[AFQiitaRequestOperation class]];
-    [self setParameterEncoding:AFJSONParameterEncoding];
-    [AFQiitaRequestOperation addAcceptableStatusCodes:[NSIndexSet indexSetWithIndexesInRange:NSMakeRange(400, 4)]];
-  }
+  self = [super initWithBaseURL:[NSURL URLWithString:kAFQiitaClientBaseURLPath]];
   return self;
+}
+
+- (AFHTTPClientParameterEncoding)parameterEncoding {
+  return AFJSONParameterEncoding;
+}
+
+- (BOOL)isLoggedIn {
+  return self.accessToken && self.accessToken.length > 0;
+}
+
+- (AFHTTPRequestOperation *)HTTPRequestOperationWithRequest:(NSURLRequest *)request success:(void (^)(AFHTTPRequestOperation *, id))success failure:(void (^)(AFHTTPRequestOperation *, NSError *))failure {
+  [AFQiitaRequestOperation addAcceptableStatusCodes:[NSIndexSet indexSetWithIndexesInRange:NSMakeRange(400, 4)]];
+  [[AFNetworkActivityIndicatorManager sharedManager] setEnabled:YES];
+  AFQiitaRequestOperation *op = [[AFQiitaRequestOperation alloc] initWithRequest:request];
+  [op setCompletionBlockWithSuccess:success failure:failure];
+  return op;
 }
 
 - (NSMutableURLRequest *)requestWithMethod:(NSString *)method
@@ -49,6 +62,24 @@ static NSString *const kAFQiitaClientBaseURLPath = @"https://qiita.com/api/v1";
     path = [path stringByAppendingFormat:@"?token=%@", self.accessToken];
   return [super requestWithMethod:method path:path parameters:parameters];
 }
+
+- (void)getURL:(NSURL *)URL
+       success:(AFQiitaResponseHandler)success
+       failure:(AFQiitaErrorHandler)failure {
+  AFHTTPRequestOperation *op =
+  [self
+   HTTPRequestOperationWithRequest:[NSMutableURLRequest requestWithURL:URL]
+   success:^(AFHTTPRequestOperation *operation, id responseObject) {
+     if(success)
+       success([(AFQiitaRequestOperation *)operation qiitaResponse]);
+   }
+   failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+     if(failure)
+       failure(error);
+   }];
+  [self enqueueHTTPRequestOperation:op];
+}
+
 
 #pragma mark - Authentication
 
@@ -63,6 +94,7 @@ static NSString *const kAFQiitaClientBaseURLPath = @"https://qiita.com/api/v1";
            if(
               [json isKindOfClass:[NSDictionary class]] &&
               [json[@"token"] isKindOfClass:[NSString class]]) {
+             self.accessToken = json[@"token"];
              if(success) success();
            } else if(failure) {
              failure([NSError errorWithDomain:AFQiitaErrorDomain
@@ -130,6 +162,21 @@ static NSString *const kAFQiitaClientBaseURLPath = @"https://qiita.com/api/v1";
           if(failure)
             failure(error);
         }];
+}
+
+
+- (void)myItemsWithSuccess:(AFQiitaResponseHandler)success
+                   failure:(AFQiitaErrorHandler)failure {
+  [self
+   currentUserWithSuccess:^(AFQiitaResponse *response) {
+     AFQiitaUser *user = response.first;
+     [self itemsWithUsername:user.urlName
+                     success:success failure:failure];
+   }
+   failure:^(NSError *error) {
+     if(failure)
+       failure(error);
+   }];
 }
 
 - (void)itemsWithUsername:(NSString *)username

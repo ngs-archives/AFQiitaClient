@@ -12,12 +12,11 @@
 		8544D0D01628A74D00FA1144 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8544D0CF1628A74D00FA1144 /* CoreGraphics.framework */; };
 		8544D0D61628A74D00FA1144 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8544D0D41628A74D00FA1144 /* InfoPlist.strings */; };
 		8544D0D81628A74D00FA1144 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544D0D71628A74D00FA1144 /* main.m */; };
-		8544D0DC1628A74D00FA1144 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544D0DB1628A74D00FA1144 /* AppDelegate.m */; };
+		8544D0DC1628A74D00FA1144 /* IQAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544D0DB1628A74D00FA1144 /* IQAppDelegate.m */; };
 		8544D0DE1628A74D00FA1144 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 8544D0DD1628A74D00FA1144 /* Default.png */; };
 		8544D0E01628A74D00FA1144 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8544D0DF1628A74D00FA1144 /* Default@2x.png */; };
 		8544D0E21628A74D00FA1144 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8544D0E11628A74D00FA1144 /* Default-568h@2x.png */; };
 		8544D0E51628A74D00FA1144 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8544D0E31628A74D00FA1144 /* MainStoryboard.storyboard */; };
-		8544D0E81628A74D00FA1144 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544D0E71628A74D00FA1144 /* ViewController.m */; };
 		8544D1081628A79600FA1144 /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544D0F61628A79600FA1144 /* AFHTTPClient.m */; };
 		8544D1091628A79600FA1144 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544D0F81628A79600FA1144 /* AFHTTPRequestOperation.m */; };
 		8544D10A1628A79600FA1144 /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544D0FA1628A79600FA1144 /* AFImageRequestOperation.m */; };
@@ -36,6 +35,12 @@
 		8544D2FF16292B1500FA1144 /* AFQiitaResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544D2F516292B1500FA1144 /* AFQiitaResponse.m */; };
 		8544D30016292B1500FA1144 /* AFQiitaTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544D2F716292B1500FA1144 /* AFQiitaTag.m */; };
 		8544D30116292B1500FA1144 /* AFQiitaUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544D2F916292B1500FA1144 /* AFQiitaUser.m */; };
+		8544D3051629316C00FA1144 /* IQItemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544D3041629316C00FA1144 /* IQItemsViewController.m */; };
+		85484608162943C7006030E0 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 85484605162943C7006030E0 /* SVProgressHUD.bundle */; };
+		85484609162943C7006030E0 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 85484607162943C7006030E0 /* SVProgressHUD.m */; };
+		8548461716294CF4006030E0 /* IQItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8548461616294CF4006030E0 /* IQItemViewController.m */; };
+		85EEAE7B162938A9001ADBC8 /* IQMoreCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 85EEAE7A162938A9001ADBC8 /* IQMoreCell.m */; };
+		85EEAE7E162938B5001ADBC8 /* IQItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 85EEAE7D162938B5001ADBC8 /* IQItemCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,14 +52,12 @@
 		8544D0D51628A74D00FA1144 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8544D0D71628A74D00FA1144 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8544D0D91628A74D00FA1144 /* AFQiitaClient iOS Example-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AFQiitaClient iOS Example-Prefix.pch"; sourceTree = "<group>"; };
-		8544D0DA1628A74D00FA1144 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		8544D0DB1628A74D00FA1144 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8544D0DA1628A74D00FA1144 /* IQAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IQAppDelegate.h; sourceTree = "<group>"; };
+		8544D0DB1628A74D00FA1144 /* IQAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IQAppDelegate.m; sourceTree = "<group>"; };
 		8544D0DD1628A74D00FA1144 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		8544D0DF1628A74D00FA1144 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		8544D0E11628A74D00FA1144 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		8544D0E41628A74D00FA1144 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		8544D0E61628A74D00FA1144 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8544D0E71628A74D00FA1144 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		8544D0F51628A79600FA1144 /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
 		8544D0F61628A79600FA1144 /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPClient.m; sourceTree = "<group>"; };
 		8544D0F71628A79600FA1144 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
@@ -93,6 +96,17 @@
 		8544D2F716292B1500FA1144 /* AFQiitaTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFQiitaTag.m; sourceTree = "<group>"; };
 		8544D2F816292B1500FA1144 /* AFQiitaUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFQiitaUser.h; sourceTree = "<group>"; };
 		8544D2F916292B1500FA1144 /* AFQiitaUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFQiitaUser.m; sourceTree = "<group>"; };
+		8544D3031629316C00FA1144 /* IQItemsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQItemsViewController.h; sourceTree = "<group>"; };
+		8544D3041629316C00FA1144 /* IQItemsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQItemsViewController.m; sourceTree = "<group>"; };
+		85484605162943C7006030E0 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		85484606162943C7006030E0 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		85484607162943C7006030E0 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		8548461516294CF4006030E0 /* IQItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQItemViewController.h; sourceTree = "<group>"; };
+		8548461616294CF4006030E0 /* IQItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQItemViewController.m; sourceTree = "<group>"; };
+		85EEAE79162938A9001ADBC8 /* IQMoreCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQMoreCell.h; sourceTree = "<group>"; };
+		85EEAE7A162938A9001ADBC8 /* IQMoreCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQMoreCell.m; sourceTree = "<group>"; };
+		85EEAE7C162938B5001ADBC8 /* IQItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQItemCell.h; sourceTree = "<group>"; };
+		85EEAE7D162938B5001ADBC8 /* IQItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQItemCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,11 +156,12 @@
 		8544D0D11628A74D00FA1144 /* AFQiitaClient iOS Example */ = {
 			isa = PBXGroup;
 			children = (
-				8544D0DA1628A74D00FA1144 /* AppDelegate.h */,
-				8544D0DB1628A74D00FA1144 /* AppDelegate.m */,
+				85484603162943C7006030E0 /* Vendors */,
+				85EEAE7716293896001ADBC8 /* TableVells */,
+				8544D3021629313700FA1144 /* ViewControllers */,
+				8544D0DA1628A74D00FA1144 /* IQAppDelegate.h */,
+				8544D0DB1628A74D00FA1144 /* IQAppDelegate.m */,
 				8544D0E31628A74D00FA1144 /* MainStoryboard.storyboard */,
-				8544D0E61628A74D00FA1144 /* ViewController.h */,
-				8544D0E71628A74D00FA1144 /* ViewController.m */,
 				8544D0D21628A74D00FA1144 /* Supporting Files */,
 			);
 			path = "AFQiitaClient iOS Example";
@@ -228,6 +243,46 @@
 			path = ../AFQiitaClient;
 			sourceTree = "<group>";
 		};
+		8544D3021629313700FA1144 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8544D3031629316C00FA1144 /* IQItemsViewController.h */,
+				8544D3041629316C00FA1144 /* IQItemsViewController.m */,
+				8548461516294CF4006030E0 /* IQItemViewController.h */,
+				8548461616294CF4006030E0 /* IQItemViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		85484603162943C7006030E0 /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+				85484604162943C7006030E0 /* SVProgressHUD */,
+			);
+			path = Vendors;
+			sourceTree = "<group>";
+		};
+		85484604162943C7006030E0 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				85484605162943C7006030E0 /* SVProgressHUD.bundle */,
+				85484606162943C7006030E0 /* SVProgressHUD.h */,
+				85484607162943C7006030E0 /* SVProgressHUD.m */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		85EEAE7716293896001ADBC8 /* TableVells */ = {
+			isa = PBXGroup;
+			children = (
+				85EEAE79162938A9001ADBC8 /* IQMoreCell.h */,
+				85EEAE7A162938A9001ADBC8 /* IQMoreCell.m */,
+				85EEAE7C162938B5001ADBC8 /* IQItemCell.h */,
+				85EEAE7D162938B5001ADBC8 /* IQItemCell.m */,
+			);
+			path = TableVells;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -284,6 +339,7 @@
 				8544D0E01628A74D00FA1144 /* Default@2x.png in Resources */,
 				8544D0E21628A74D00FA1144 /* Default-568h@2x.png in Resources */,
 				8544D0E51628A74D00FA1144 /* MainStoryboard.storyboard in Resources */,
+				85484608162943C7006030E0 /* SVProgressHUD.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,8 +351,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8544D0D81628A74D00FA1144 /* main.m in Sources */,
-				8544D0DC1628A74D00FA1144 /* AppDelegate.m in Sources */,
-				8544D0E81628A74D00FA1144 /* ViewController.m in Sources */,
+				8544D0DC1628A74D00FA1144 /* IQAppDelegate.m in Sources */,
 				8544D1081628A79600FA1144 /* AFHTTPClient.m in Sources */,
 				8544D1091628A79600FA1144 /* AFHTTPRequestOperation.m in Sources */,
 				8544D10A1628A79600FA1144 /* AFImageRequestOperation.m in Sources */,
@@ -314,6 +369,11 @@
 				8544D2FF16292B1500FA1144 /* AFQiitaResponse.m in Sources */,
 				8544D30016292B1500FA1144 /* AFQiitaTag.m in Sources */,
 				8544D30116292B1500FA1144 /* AFQiitaUser.m in Sources */,
+				8544D3051629316C00FA1144 /* IQItemsViewController.m in Sources */,
+				85EEAE7B162938A9001ADBC8 /* IQMoreCell.m in Sources */,
+				85EEAE7E162938B5001ADBC8 /* IQItemCell.m in Sources */,
+				85484609162943C7006030E0 /* SVProgressHUD.m in Sources */,
+				8548461716294CF4006030E0 /* IQItemViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

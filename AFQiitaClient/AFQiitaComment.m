@@ -30,10 +30,10 @@
 
 - (id)initWithDictionary:(NSDictionary *)dictionary {
   if(self=[super init]) {
-    if(dictionary[@"record_id"]&&
-       ([dictionary[@"record_id"] isKindOfClass:[NSString class]] ||
-        [dictionary[@"record_id"] isKindOfClass:[NSNumber class]]))
-      self.recordId = [dictionary[@"record_id"] integerValue];
+    if(dictionary[@"id"]&&
+       ([dictionary[@"id"] isKindOfClass:[NSString class]] ||
+        [dictionary[@"id"] isKindOfClass:[NSNumber class]]))
+      self.recordId = [dictionary[@"id"] integerValue];
     if(dictionary[@"user"]&&
        [dictionary[@"user"] isKindOfClass:[NSString class]])
       self.user = [[AFQiitaUser alloc] initWithDictionary:dictionary[@"user"]];
@@ -49,7 +49,7 @@
 
 - (NSDictionary *)dictionary {
   return @{
-  @"record_id" : @(self.recordId),
+  @"id" : @(self.recordId),
   @"user" : [self.user dictionary],
   @"body" : self.body,
   @"uuid" : self.uuid
@@ -61,7 +61,7 @@
 
 - (id)initWithCoder:(NSCoder *)aDecoder {
   if(self=[super init]) {
-    self.recordId = [aDecoder decodeIntegerForKey:@"record_id"];
+    self.recordId = [aDecoder decodeIntegerForKey:@"id"];
     self.user = [aDecoder decodeObjectForKey:@"user"];
     self.body = [aDecoder decodeObjectForKey:@"body"];
     self.uuid = [aDecoder decodeObjectForKey:@"uuid"];
@@ -71,7 +71,7 @@
 
 - (void)encodeWithCoder:(NSCoder *)aCoder {
   
-  [aCoder encodeInteger:self.recordId forKey:@"record_id"];
+  [aCoder encodeInteger:self.recordId forKey:@"id"];
   [aCoder encodeObject:self.user forKey:@"user"];
   [aCoder encodeObject:self.body forKey:@"body"];
   [aCoder encodeObject:self.uuid forKey:@"uuid"];

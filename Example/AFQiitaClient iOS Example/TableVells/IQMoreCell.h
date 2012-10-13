@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  IQMoreCell.h
 //  AFQiitaClient iOS Example
 //
 //  Created by Atsushi Nagase on 10/13/12.
@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface IQMoreCell : UITableViewCell
+
+@property (nonatomic, assign) IBOutlet UIActivityIndicatorView *activityIndicatorView;
 
 @end

@@ -36,7 +36,13 @@ typedef void (^AFQiitaResponseHandler)(AFQiitaResponse *response);
 @interface AFQiitaClient : AFHTTPClient
 
 @property (nonatomic, strong) NSString *accessToken;
+@property (nonatomic, readonly) BOOL isLoggedIn;
 
+#pragma mark - Request alias
+
+- (void)getURL:(NSURL *)URL
+       success:(AFQiitaResponseHandler)success
+       failure:(AFQiitaErrorHandler)failure;
 
 #pragma mark - Authentication
 
@@ -60,6 +66,8 @@ typedef void (^AFQiitaResponseHandler)(AFQiitaResponse *response);
                  success:(AFQiitaResponseHandler)success
                  failure:(AFQiitaErrorHandler)failure;
 
+- (void)myItemsWithSuccess:(AFQiitaResponseHandler)success
+                   failure:(AFQiitaErrorHandler)failure;
 
 - (void)itemsWithUsername:(NSString *)username
                   success:(AFQiitaResponseHandler)success

@@ -52,10 +52,10 @@
         [dictionary[@"comment_count"] isKindOfClass:[NSNumber class]]))
       self.commentCount = [dictionary[@"comment_count"] integerValue];
 
-    if(dictionary[@"record_id"]&&
-       ([dictionary[@"record_id"] isKindOfClass:[NSString class]] ||
-        [dictionary[@"record_id"] isKindOfClass:[NSNumber class]]))
-      self.recordId = [dictionary[@"record_id"] integerValue];
+    if(dictionary[@"id"]&&
+       ([dictionary[@"id"] isKindOfClass:[NSString class]] ||
+        [dictionary[@"id"] isKindOfClass:[NSNumber class]]))
+      self.recordId = [dictionary[@"id"] integerValue];
 
     if(dictionary[@"stock_count"]&&
        ([dictionary[@"stock_count"] isKindOfClass:[NSString class]] ||
@@ -63,7 +63,7 @@
       self.stockCount = [dictionary[@"stock_count"] integerValue];
 
     if(dictionary[@"user"]&&
-       [dictionary[@"user"] isKindOfClass:[NSString class]])
+       [dictionary[@"user"] isKindOfClass:[NSDictionary class]])
       self.user = [[AFQiitaUser alloc] initWithDictionary:dictionary[@"user"]];
 
     if(dictionary[@"comments"]&&
@@ -122,7 +122,7 @@
   @"is_private" :     @(self.isPrivate),
   @"is_stocked" :     @(self.isStocked),
   @"comment_count" :     @(self.commentCount),
-  @"record_id" :     @(self.recordId),
+  @"id" :     @(self.recordId),
   @"stock_count" :     @(self.stockCount),
   @"user" : [self.user dictionary],
   @"comments" : self.comments,
@@ -157,7 +157,7 @@
     self.isPrivate = [aDecoder decodeBoolForKey:@"is_private"];
     self.isStocked = [aDecoder decodeBoolForKey:@"is_stocked"];
     self.commentCount = [aDecoder decodeIntegerForKey:@"comment_count"];
-    self.recordId = [aDecoder decodeIntegerForKey:@"record_id"];
+    self.recordId = [aDecoder decodeIntegerForKey:@"id"];
     self.stockCount = [aDecoder decodeIntegerForKey:@"stock_count"];
     self.user = [aDecoder decodeObjectForKey:@"user"];
     self.comments = [aDecoder decodeObjectForKey:@"comments"];
@@ -181,7 +181,7 @@
   [aCoder encodeBool:self.isPrivate forKey:@"is_private"];
   [aCoder encodeBool:self.isStocked forKey:@"is_stocked"];
   [aCoder encodeInteger:self.commentCount forKey:@"comment_count"];
-  [aCoder encodeInteger:self.recordId forKey:@"record_id"];
+  [aCoder encodeInteger:self.recordId forKey:@"id"];
   [aCoder encodeInteger:self.stockCount forKey:@"stock_count"];
   [aCoder encodeObject:self.user forKey:@"user"];
   [aCoder encodeObject:self.comments forKey:@"comments"];
@@ -199,7 +199,6 @@
 }
 
 #pragma mark - NSCopying
-
 
 - (id)copyWithZone:(NSZone *)zone {
   AFQiitaItem* newCopy = [[[self class] alloc] init];
@@ -222,6 +221,16 @@
   newCopy.gistUrl = [self.gistUrl copyWithZone:zone];
   newCopy.url = [self.url copyWithZone:zone];
   return newCopy;
+}
+
+- (BOOL)isEqual:(id)object {
+  if([object isKindOfClass:[self class]])
+    return [(AFQiitaItem *)object recordId] == self.recordId;
+  return NO;
+}
+
+- (NSString *)description {
+  return [NSString stringWithFormat:@"<%@: id=%d, title=%@>", NSStringFromClass(self.class), self.recordId, self.title];
 }
 
 @end

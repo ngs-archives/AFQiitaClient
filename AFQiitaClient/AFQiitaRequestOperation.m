@@ -41,17 +41,15 @@ NSString * const AFQiitaErrorDomain = @"AFQiitaErrorDomain";
 
 - (id)responseJSON {
   id json = [super responseJSON];
-  if([json isKindOfClass:[NSDictionary class]]) {
-    if([json containsValueForKey:@"error"]) {
-      NSDictionary *userInfo = nil;
-      if([json[@"error"] isKindOfClass:[NSString class]])
-        userInfo = [NSDictionary dictionaryWithObject:json[@"error"] forKey:NSLocalizedDescriptionKey];
-      self.apiError = [NSError errorWithDomain:AFQiitaErrorDomain
-                                          code:NSURLErrorBadServerResponse
-                                      userInfo:userInfo];
-    } else {
-      
-    }
+  if([json isKindOfClass:[NSDictionary class]] && json[@"error"]) {
+    NSDictionary *userInfo = nil;
+    if([json[@"error"] isKindOfClass:[NSString class]])
+      userInfo = [NSDictionary dictionaryWithObject:json[@"error"] forKey:NSLocalizedDescriptionKey];
+    self.apiError = [NSError errorWithDomain:AFQiitaErrorDomain
+                                        code:NSURLErrorBadServerResponse
+                                    userInfo:userInfo];
+  } else {
+    _qiitaResponse = [[AFQiitaResponse alloc] initWithResponse:self.response itemClass:self.itemClass JSON:json];
   }
   return json;
 }
@@ -63,6 +61,7 @@ NSString * const AFQiitaErrorDomain = @"AFQiitaErrorDomain";
 - (Class)itemClass {
   NSString *method = [self.request.HTTPMethod uppercaseString];
   NSMutableArray *comps = [[self.request.URL pathComponents] mutableCopy];
+  [comps removeObjectAtIndex:0];
   [comps removeObjectAtIndex:0];
   [comps removeObjectAtIndex:0];
   NSInteger len = [comps count];
@@ -77,7 +76,8 @@ NSString * const AFQiitaErrorDomain = @"AFQiitaErrorDomain";
     return nil;
   if(len == 1 && [comp0 isEqualToString:@"tags"])
     return [AFQiitaTag class];
-  if([comp0 isEqualToString:@"users"] && (len == 1 || len == 2))
+  if(([comp0 isEqualToString:@"users"] && len == 2) ||
+     ([comp0 isEqualToString:@"user"] && len == 1))
     return [AFQiitaUser class];
   return [AFQiitaItem class];
 }
