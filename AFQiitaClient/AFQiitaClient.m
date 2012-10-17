@@ -49,7 +49,9 @@ static NSString *const kAFQiitaClientBaseURLPath = @"https://qiita.com/api/v1";
 
 - (AFHTTPRequestOperation *)HTTPRequestOperationWithRequest:(NSURLRequest *)request success:(void (^)(AFHTTPRequestOperation *, id))success failure:(void (^)(AFHTTPRequestOperation *, NSError *))failure {
   [AFQiitaRequestOperation addAcceptableStatusCodes:[NSIndexSet indexSetWithIndexesInRange:NSMakeRange(400, 4)]];
+#if __IPHONE_OS_VERSION_MIN_REQUIRED
   [[AFNetworkActivityIndicatorManager sharedManager] setEnabled:YES];
+#endif
   AFQiitaRequestOperation *op = [[AFQiitaRequestOperation alloc] initWithRequest:request];
   [op setCompletionBlockWithSuccess:success failure:failure];
   return op;
