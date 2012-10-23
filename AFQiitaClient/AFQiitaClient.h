@@ -123,6 +123,11 @@ typedef void (^AFQiitaResponseHandler)(AFQiitaResponse *response);
            success:(AFQiitaResponseHandler)success
            failure:(AFQiitaErrorHandler)failure;
 
+- (void)createItem:(AFQiitaItem *)item
+     postToTwitter:(BOOL)postToTwitter
+        postToGist:(BOOL)postToGist
+           success:(AFQiitaResponseHandler)success
+           failure:(AFQiitaErrorHandler)failure;
 
 - (void)updateItem:(AFQiitaItem *)item
            success:(AFQiitaResponseHandler)success
