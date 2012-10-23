@@ -143,11 +143,21 @@
 #pragma mark - Parameter Dictionaries
 
 - (NSDictionary *)parameterDictionaryForUpdate {
-  return nil;
+  return @{
+  @"title" : self.title,
+  @"tags" : self.tags,
+  @"body" : self.body,
+  @"private" : @(self.isPrivate)
+  };
 }
 
 - (NSDictionary *)parameterDictionaryForCreate {
-  return nil;
+  return @{
+  @"title" : self.title,
+  @"tags" : self.tags,
+  @"body" : self.body,
+  @"private" : @(self.isPrivate)
+  };
 }
 
 #pragma mark - NSCoding
