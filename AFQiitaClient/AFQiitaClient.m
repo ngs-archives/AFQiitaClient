@@ -314,8 +314,23 @@ static NSString *const kAFQiitaClientBaseURLPath = @"https://qiita.com/api/v1";
 - (void)createItem:(AFQiitaItem *)item
            success:(AFQiitaResponseHandler)success
            failure:(AFQiitaErrorHandler)failure {
+  [self createItem:item
+     postToTwitter:NO
+        postToGist:NO
+           success:success
+           failure:failure];
+}
+
+- (void)createItem:(AFQiitaItem *)item
+     postToTwitter:(BOOL)postToTwitter
+        postToGist:(BOOL)postToGist
+           success:(AFQiitaResponseHandler)success
+           failure:(AFQiitaErrorHandler)failure {
+  NSMutableDictionary *parameters = [[item parameterDictionaryForCreate] mutableCopy];
+  [parameters setObject:@(postToTwitter) forKey:@"tweet"];
+  [parameters setObject:@(postToGist) forKey:@"gist"];
   [self postPath:@"items"
-      parameters:[item parameterDictionaryForCreate]
+      parameters:parameters
          success:^(AFHTTPRequestOperation *operation, id responseObject) {
            if(success)
              success([(AFQiitaRequestOperation *)operation qiitaResponse]);
