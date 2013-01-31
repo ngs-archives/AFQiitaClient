@@ -13,15 +13,6 @@
 		8544D24F162908F000FA1144 /* AFQiitaResponseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544D2031629086100FA1144 /* AFQiitaResponseTests.m */; };
 		8544D250162908F000FA1144 /* FoundationNamedAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544D2091629086100FA1144 /* FoundationNamedAdditions.m */; };
 		8544D251162908F000FA1144 /* MockNSHTTPURLResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544D20B1629086100FA1144 /* MockNSHTTPURLResponse.m */; };
-		8544D252162908F000FA1144 /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544D233162908B200FA1144 /* AFHTTPClient.m */; };
-		8544D253162908F000FA1144 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544D235162908B200FA1144 /* AFHTTPRequestOperation.m */; };
-		8544D254162908F000FA1144 /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544D237162908B200FA1144 /* AFImageRequestOperation.m */; };
-		8544D255162908F000FA1144 /* AFJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544D239162908B200FA1144 /* AFJSONRequestOperation.m */; };
-		8544D256162908F000FA1144 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544D23B162908B200FA1144 /* AFNetworkActivityIndicatorManager.m */; };
-		8544D257162908F000FA1144 /* AFPropertyListRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544D23E162908B200FA1144 /* AFPropertyListRequestOperation.m */; };
-		8544D258162908F000FA1144 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544D240162908B200FA1144 /* AFURLConnectionOperation.m */; };
-		8544D259162908F000FA1144 /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544D242162908B200FA1144 /* AFXMLRequestOperation.m */; };
-		8544D25A162908F000FA1144 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544D244162908B200FA1144 /* UIImageView+AFNetworking.m */; };
 		8544D2781629098000FA1144 /* AFQiitaClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544D2661629098000FA1144 /* AFQiitaClient.m */; };
 		8544D2791629098000FA1144 /* AFQiitaComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544D2681629098000FA1144 /* AFQiitaComment.m */; };
 		8544D27A1629098000FA1144 /* AFQiitaItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544D26A1629098000FA1144 /* AFQiitaItem.m */; };
@@ -34,6 +25,7 @@
 		8544D2A316290B6D00FA1144 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8544D2A216290B6D00FA1144 /* SystemConfiguration.framework */; };
 		8544D2BD16290BF800FA1144 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8544D2061629086100FA1144 /* InfoPlist.strings */; };
 		8544D2E51629268F00FA1144 /* items.json in Resources */ = {isa = PBXBuildFile; fileRef = 8544D2E41629268F00FA1144 /* items.json */; };
+		99B2D73E08E4407A9D6BA09B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B3D854FC98D4A8990A83D5A /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,25 +44,6 @@
 		8544D2091629086100FA1144 /* FoundationNamedAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoundationNamedAdditions.m; sourceTree = "<group>"; };
 		8544D20A1629086100FA1144 /* MockNSHTTPURLResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockNSHTTPURLResponse.h; sourceTree = "<group>"; };
 		8544D20B1629086100FA1144 /* MockNSHTTPURLResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockNSHTTPURLResponse.m; sourceTree = "<group>"; };
-		8544D232162908B200FA1144 /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
-		8544D233162908B200FA1144 /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPClient.m; sourceTree = "<group>"; };
-		8544D234162908B200FA1144 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
-		8544D235162908B200FA1144 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
-		8544D236162908B200FA1144 /* AFImageRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFImageRequestOperation.h; sourceTree = "<group>"; };
-		8544D237162908B200FA1144 /* AFImageRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFImageRequestOperation.m; sourceTree = "<group>"; };
-		8544D238162908B200FA1144 /* AFJSONRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFJSONRequestOperation.h; sourceTree = "<group>"; };
-		8544D239162908B200FA1144 /* AFJSONRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFJSONRequestOperation.m; sourceTree = "<group>"; };
-		8544D23A162908B200FA1144 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
-		8544D23B162908B200FA1144 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
-		8544D23C162908B200FA1144 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
-		8544D23D162908B200FA1144 /* AFPropertyListRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFPropertyListRequestOperation.h; sourceTree = "<group>"; };
-		8544D23E162908B200FA1144 /* AFPropertyListRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFPropertyListRequestOperation.m; sourceTree = "<group>"; };
-		8544D23F162908B200FA1144 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
-		8544D240162908B200FA1144 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
-		8544D241162908B200FA1144 /* AFXMLRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFXMLRequestOperation.h; sourceTree = "<group>"; };
-		8544D242162908B200FA1144 /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFXMLRequestOperation.m; sourceTree = "<group>"; };
-		8544D243162908B200FA1144 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
-		8544D244162908B200FA1144 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
 		8544D2641629098000FA1144 /* AFQiita.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFQiita.h; sourceTree = "<group>"; };
 		8544D2651629098000FA1144 /* AFQiitaClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFQiitaClient.h; sourceTree = "<group>"; };
 		8544D2661629098000FA1144 /* AFQiitaClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFQiitaClient.m; sourceTree = "<group>"; };
@@ -95,6 +68,8 @@
 		8544D2AE16290BE500FA1144 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		8544D2AF16290BE500FA1144 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8544D2E41629268F00FA1144 /* items.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = items.json; sourceTree = "<group>"; };
+		9B3D854FC98D4A8990A83D5A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB3279A841E74267AD5767B7 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +80,7 @@
 				8544D2A316290B6D00FA1144 /* SystemConfiguration.framework in Frameworks */,
 				8544D1831628AFEF00FA1144 /* Cocoa.framework in Frameworks */,
 				8544D13C1628A8EC00FA1144 /* SenTestingKit.framework in Frameworks */,
+				99B2D73E08E4407A9D6BA09B /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +94,7 @@
 				8544D1521628A90900FA1144 /* Vendors */,
 				8544D1231628A89200FA1144 /* Frameworks */,
 				8544D1221628A89200FA1144 /* Products */,
+				EB3279A841E74267AD5767B7 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,6 +114,7 @@
 				8544D13B1628A8EC00FA1144 /* SenTestingKit.framework */,
 				8544D1391628A8DA00FA1144 /* Foundation.framework */,
 				8544D2AC16290BE500FA1144 /* Other Frameworks */,
+				9B3D854FC98D4A8990A83D5A /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -144,7 +122,6 @@
 		8544D1521628A90900FA1144 /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
-				8544D231162908B200FA1144 /* AFNetworking */,
 				8544D2131629086F00FA1144 /* AFQiitaClient */,
 			);
 			name = Vendors;
@@ -199,33 +176,6 @@
 			path = ../AFQiitaClient;
 			sourceTree = "<group>";
 		};
-		8544D231162908B200FA1144 /* AFNetworking */ = {
-			isa = PBXGroup;
-			children = (
-				8544D232162908B200FA1144 /* AFHTTPClient.h */,
-				8544D233162908B200FA1144 /* AFHTTPClient.m */,
-				8544D234162908B200FA1144 /* AFHTTPRequestOperation.h */,
-				8544D235162908B200FA1144 /* AFHTTPRequestOperation.m */,
-				8544D236162908B200FA1144 /* AFImageRequestOperation.h */,
-				8544D237162908B200FA1144 /* AFImageRequestOperation.m */,
-				8544D238162908B200FA1144 /* AFJSONRequestOperation.h */,
-				8544D239162908B200FA1144 /* AFJSONRequestOperation.m */,
-				8544D23A162908B200FA1144 /* AFNetworkActivityIndicatorManager.h */,
-				8544D23B162908B200FA1144 /* AFNetworkActivityIndicatorManager.m */,
-				8544D23C162908B200FA1144 /* AFNetworking.h */,
-				8544D23D162908B200FA1144 /* AFPropertyListRequestOperation.h */,
-				8544D23E162908B200FA1144 /* AFPropertyListRequestOperation.m */,
-				8544D23F162908B200FA1144 /* AFURLConnectionOperation.h */,
-				8544D240162908B200FA1144 /* AFURLConnectionOperation.m */,
-				8544D241162908B200FA1144 /* AFXMLRequestOperation.h */,
-				8544D242162908B200FA1144 /* AFXMLRequestOperation.m */,
-				8544D243162908B200FA1144 /* UIImageView+AFNetworking.h */,
-				8544D244162908B200FA1144 /* UIImageView+AFNetworking.m */,
-			);
-			name = AFNetworking;
-			path = ../AFNetworking/AFNetworking;
-			sourceTree = "<group>";
-		};
 		8544D29D16290A7800FA1144 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
@@ -268,6 +218,7 @@
 				8544D11D1628A89200FA1144 /* Frameworks */,
 				8544D11E1628A89200FA1144 /* Resources */,
 				8544D11F1628A89200FA1144 /* ShellScript */,
+				F3318B9F41824C58BF0EE5B5 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -330,6 +281,20 @@
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
 		};
+		F3318B9F41824C58BF0EE5B5 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -339,15 +304,6 @@
 			files = (
 				8544D250162908F000FA1144 /* FoundationNamedAdditions.m in Sources */,
 				8544D251162908F000FA1144 /* MockNSHTTPURLResponse.m in Sources */,
-				8544D252162908F000FA1144 /* AFHTTPClient.m in Sources */,
-				8544D253162908F000FA1144 /* AFHTTPRequestOperation.m in Sources */,
-				8544D254162908F000FA1144 /* AFImageRequestOperation.m in Sources */,
-				8544D255162908F000FA1144 /* AFJSONRequestOperation.m in Sources */,
-				8544D256162908F000FA1144 /* AFNetworkActivityIndicatorManager.m in Sources */,
-				8544D257162908F000FA1144 /* AFPropertyListRequestOperation.m in Sources */,
-				8544D258162908F000FA1144 /* AFURLConnectionOperation.m in Sources */,
-				8544D259162908F000FA1144 /* AFXMLRequestOperation.m in Sources */,
-				8544D25A162908F000FA1144 /* UIImageView+AFNetworking.m in Sources */,
 				8544D2781629098000FA1144 /* AFQiitaClient.m in Sources */,
 				8544D2791629098000FA1144 /* AFQiitaComment.m in Sources */,
 				8544D27A1629098000FA1144 /* AFQiitaItem.m in Sources */,
@@ -389,8 +345,8 @@
 		};
 		8544D1371628A89200FA1144 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB3279A841E74267AD5767B7 /* Pods.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -426,8 +382,8 @@
 		};
 		8544D1381628A89200FA1144 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB3279A841E74267AD5767B7 /* Pods.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";

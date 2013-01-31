@@ -30,7 +30,7 @@
 
 - (id)initWithDictionary:(NSDictionary *)dictionary {
   if(self=[super init]) {
-    
+
     static NSDateFormatter *DateFormatter;
     if(!DateFormatter) {
       // "2012-10-13 13:30:19 +0900",
@@ -187,7 +187,7 @@
 }
 
 - (void)encodeWithCoder:(NSCoder *)aCoder {
-  
+
   [aCoder encodeBool:self.isPrivate forKey:@"is_private"];
   [aCoder encodeBool:self.isStocked forKey:@"is_stocked"];
   [aCoder encodeInteger:self.commentCount forKey:@"comment_count"];
@@ -240,7 +240,7 @@
 }
 
 - (NSString *)description {
-  return [NSString stringWithFormat:@"<%@: id=%d, title=%@>", NSStringFromClass(self.class), self.recordId, self.title];
+  return [NSString stringWithFormat:@"<%@: id=%ld, title=%@>", NSStringFromClass(self.class), self.recordId, self.title];
 }
 
 @end
