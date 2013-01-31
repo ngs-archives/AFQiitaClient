@@ -240,7 +240,7 @@
 }
 
 - (NSString *)description {
-  return [NSString stringWithFormat:@"<%@: id=%ld, title=%@>", NSStringFromClass(self.class), self.recordId, self.title];
+  return [NSString stringWithFormat:@"<%@: id=%ld, title=%@>", NSStringFromClass(self.class), (long)self.recordId, self.title];
 }
 
 @end
