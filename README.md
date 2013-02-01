@@ -6,6 +6,12 @@
 
 `AFQiitaClient` は `AFHTTPClient` サブクラスで、[AFNetworking](https://github.com/afnetworking/afnetworking) のソースコードと共に、プロジェクトに追加して使用します。
 
+[CocoaPods](http://cocoapods.org/) からも追加できます。
+
+```ruby
+pod 'AFQiitaClient'
+```
+
 ## 使い方
 
 ### 初期化
