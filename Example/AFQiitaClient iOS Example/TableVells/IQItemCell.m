@@ -16,7 +16,7 @@
 - (void)setItem:(AFQiitaItem *)item {
   if(![item  isEqual:_item]) {
     self.timestampLabel.text = item.updatedAtInWords;
-    self.userLabel.text = [NSLocalizedString(@"Posted by ", nil) stringByAppendingString:item.user.name];
+    self.userLabel.text = [NSLocalizedString(@"Posted by ", nil) stringByAppendingString:item.user.urlName];
     self.titleLabel.text = item.title;
     [self.profileImageView setImageWithURL:item.user.profileImageURL];
     _item = item;
